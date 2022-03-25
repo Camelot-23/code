@@ -1,12 +1,10 @@
-ORAINCL = -I$(ORACLE_HOME)/rdbms/public                                                                                                                                                    
-ORALIB =  -L$(ORACLE_HOME)/lib -L. 
 ORALIBS = -pthread -lm -lc
 
 Gather=main server client
 
-INCLUDE=-I/home/camelot/code/freecplus -I/home/camelot/code/freecplus/db/oracle
+INCLUDE=-I./freecplus
 
-CPP=/home/camelot/code/freecplus/_freecplus.cpp # /home/camelot/code/freecplus/db/oracle/_ooci.cpp
+CPP=./freecplus/_freecplus.cpp
 CFLAGS=-g -std=c++11 -o
 
 all:$(Gather)
