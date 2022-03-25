@@ -1,4 +1,4 @@
-ORALIBS = -pthread -lm -lc
+ORALIBS = -pthread -lm 
 
 Gather=main server client
 

@@ -1,29 +1,29 @@
 /****************************************************************************************/
-/*   ³ÌÐòÃû£º_freecplus.h£¬´Ë³ÌÐòÊÇfreecplus¿ò¼Ü¹«ÓÃº¯ÊýºÍÀàµÄ¶¨ÒåÎÄ¼þ¡£                */
-/*   ×÷Õß£ºCÓïÑÔ¼¼ÊõÍø(www.freecplus.net) ÈÕÆÚ£º20190525¡£                              */
+/*   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_freecplus.hï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½freecplusï¿½ï¿½Ü¹ï¿½ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½                */
+/*   ï¿½ï¿½ï¿½ß£ï¿½Cï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½(www.freecplus.net) ï¿½ï¿½ï¿½Ú£ï¿½20190525ï¿½ï¿½                              */
 /*                                                                                      */
-/*   freecplus¿ªÔ´Ðí¿ÉÐ­ÒéÕýÎÄÈçÏÂ£º                                                    */
-/*     °æÈ¨ËùÓÐ (c) 2008-2020£¬ÂëÅ©ÓÐµÀ£¬CÓïÑÔ¼¼ÊõÍø£¨www.freecplus.net£©¡£             */
-/*     ÌØ´ËÏòÈÎºÎµÃµ½±¾Èí¼þ¸±±¾»òÏà¹ØÎÄµµµÄÈËÊÚÈ¨£º±»ÊÚÈ¨ÈËÓÐÈ¨Ê¹ÓÃ¡¢¸´ÖÆ¡¢ÐÞ¸Ä¡¢       */
-/*   ºÏ²¢¡¢³ö°æ¡¢·¢²¼¡¢É¢²¼¡¢ÔÙÊÚÈ¨ºÍ/»ò··ÊÛÈí¼þ¼°Èí¼þµÄ¸±±¾£¬¼°ÊÚÓè±»¹©Ó¦ÈËÍ¬µÈ        */
-/*   È¨Àû£¬Ö»Ðè·þ´ÓÒÔÏÂÒåÎñ£º                                                           */
-/*     ÔÚÈí¼þºÍÈí¼þµÄËùÓÐ¸±±¾ÖÐ¶¼±ØÐë°üº¬ÒÔÉÏ°æÈ¨ÉùÃ÷ºÍ±¾Ðí¿ÉÉùÃ÷¡£                     */
-/*     Èç¹ûÎ¥·µ£¬ÎÞÂÛÔÚ±¾Èí¼þµÄÊ¹ÓÃÉÏ»òÆäËûÂòÂô½»Ò×ÖÐÊÇ·ñÉæ¼°ºÏÍ¬£¬¶¼ÊôÓÚÇÖÈ¨ÐÐÎª£¬     */
-/*   ÎÒÃÇ±£Áô×·¾¿µÄÈ¨Àû¡£                                                               */
-/*   freecplus¿ªÔ´Ðí¿ÉÐ­ÒéÕýÎÄ½áÊø¡£                                                    */
+/*   freecplusï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½                                                    */
+/*     ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½ (c) 2008-2020ï¿½ï¿½ï¿½ï¿½Å©ï¿½Ðµï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½www.freecplus.netï¿½ï¿½ï¿½ï¿½             */
+/*     ï¿½Ø´ï¿½ï¿½ï¿½ï¿½ÎºÎµÃµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½È¨Ê¹ï¿½Ã¡ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½ï¿½Þ¸Ä¡ï¿½       */
+/*   ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ¡¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±»ï¿½ï¿½Ó¦ï¿½ï¿½Í¬ï¿½ï¿½        */
+/*   È¨ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½                                                           */
+/*     ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½È¨ï¿½ï¿½ï¿½ï¿½ï¿½Í±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½                     */
+/*     ï¿½ï¿½ï¿½Î¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ï»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½æ¼°ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½Îªï¿½ï¿½     */
+/*   ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½                                                               */
+/*   freecplusï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½                                                    */
 /****************************************************************************************/
 
 #include "_freecplus.h"  
 
-// °²È«µÄstrcpyº¯Êý¡£
-// dest£ºÄ¿±ê×Ö·û´®£¬²»ÐèÒª³õÊ¼»¯£¬ÔÚSTRCPYº¯ÊýÖÐÓÐ³õÊ¼»¯´úÂë¡£
-// destlen£ºÄ¿±ê×Ö·û´®destÕ¼ÓÃÄÚ´æµÄ´óÐ¡¡£
-// src£ºÔ­×Ö·û´®¡£
-// ·µ»ØÖµ£ºÄ¿±ê×Ö·û´®destµÄµØÖ·¡£
+// ï¿½ï¿½È«ï¿½ï¿½strcpyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// destï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½STRCPYï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ë¡£
+// destlenï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destÕ¼ï¿½ï¿½ï¿½Ú´ï¿½Ä´ï¿½Ð¡ï¿½ï¿½
+// srcï¿½ï¿½Ô­ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destï¿½Äµï¿½Ö·ï¿½ï¿½
 char *STRCPY(char* dest,const size_t destlen,const char* src)
 {
   if (dest==0) return 0;
-  memset(dest,0,destlen);   // ³õÊ¼»¯dest¡£
+  memset(dest,0,destlen);   // ï¿½ï¿½Ê¼ï¿½ï¿½destï¿½ï¿½
   if (src==0) return dest;
 
   if (strlen(src)>destlen-1) strncpy(dest,src,destlen-1); 
@@ -32,16 +32,16 @@ char *STRCPY(char* dest,const size_t destlen,const char* src)
   return dest;
 }
 
-// °²È«µÄstrncpyº¯Êý¡£
-// dest£ºÄ¿±ê×Ö·û´®£¬²»ÐèÒª³õÊ¼»¯£¬ÔÚSTRCPYº¯ÊýÖÐÓÐ³õÊ¼»¯´úÂë¡£
-// destlen£ºÄ¿±ê×Ö·û´®destÕ¼ÓÃÄÚ´æµÄ´óÐ¡¡£
-// src£ºÔ­×Ö·û´®¡£
-// n£º´ý¸´ÖÆµÄ×Ö½ÚÊý¡£
-// ·µ»ØÖµ£ºÄ¿±ê×Ö·û´®destµÄµØÖ·¡£
+// ï¿½ï¿½È«ï¿½ï¿½strncpyï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// destï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½STRCPYï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ë¡£
+// destlenï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destÕ¼ï¿½ï¿½ï¿½Ú´ï¿½Ä´ï¿½Ð¡ï¿½ï¿½
+// srcï¿½ï¿½Ô­ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destï¿½Äµï¿½Ö·ï¿½ï¿½
 char *STRNCPY(char* dest,const size_t destlen,const char* src,size_t n)
 {
   if (dest==0) return 0;
-  memset(dest,0,destlen);   // ³õÊ¼»¯dest¡£
+  memset(dest,0,destlen);   // ï¿½ï¿½Ê¼ï¿½ï¿½destï¿½ï¿½
   if (src==0) return dest;
 
   if (n>destlen-1) strncpy(dest,src,destlen-1); 
@@ -50,11 +50,11 @@ char *STRNCPY(char* dest,const size_t destlen,const char* src,size_t n)
   return dest;
 }
 
-// °²È«µÄstrcatº¯Êý¡£
-// dest£ºÄ¿±ê×Ö·û´®£¬×¢Òâ£¬Èç¹ûdest´ÓÎ´Ê¹¹ý£¬ÄÇÃ´ÐèÒªÖÁÉÙÒ»´Î³õÊ¼»¯¡£
-// destlen£ºÄ¿±ê×Ö·û´®destÕ¼ÓÃÄÚ´æµÄ´óÐ¡¡£
-// src£º´ý×·¼Ó×Ö·û´®¡£
-// ·µ»ØÖµ£ºÄ¿±ê×Ö·û´®destµÄµØÖ·¡£
+// ï¿½ï¿½È«ï¿½ï¿½strcatï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// destï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½â£¬ï¿½ï¿½ï¿½destï¿½ï¿½Î´Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ò»ï¿½Î³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+// destlenï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destÕ¼ï¿½ï¿½ï¿½Ú´ï¿½Ä´ï¿½Ð¡ï¿½ï¿½
+// srcï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destï¿½Äµï¿½Ö·ï¿½ï¿½
 char *STRCAT(char* dest,const size_t destlen,const char* src)
 {
   if (dest==0) return 0;
@@ -68,12 +68,12 @@ char *STRCAT(char* dest,const size_t destlen,const char* src)
   return dest;
 }
 
-// °²È«µÄstrncatº¯Êý¡£
-// dest£ºÄ¿±ê×Ö·û´®£¬×¢Òâ£¬Èç¹ûdest´ÓÎ´Ê¹¹ý£¬ÄÇÃ´ÐèÒªÖÁÉÙÒ»´Î³õÊ¼»¯¡£
-// destlen£ºÄ¿±ê×Ö·û´®destÕ¼ÓÃÄÚ´æµÄ´óÐ¡¡£
-// src£º´ý×·¼Ó×Ö·û´®¡£
-// n£º´ý×·¼ÓµÄ×Ö½ÚÊý¡£
-// ·µ»ØÖµ£ºÄ¿±ê×Ö·û´®destµÄµØÖ·¡£
+// ï¿½ï¿½È«ï¿½ï¿½strncatï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// destï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½â£¬ï¿½ï¿½ï¿½destï¿½ï¿½Î´Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ò»ï¿½Î³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+// destlenï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destÕ¼ï¿½ï¿½ï¿½Ú´ï¿½Ä´ï¿½Ð¡ï¿½ï¿½
+// srcï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// nï¿½ï¿½ï¿½ï¿½×·ï¿½Óµï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destï¿½Äµï¿½Ö·ï¿½ï¿½
 char *STRNCAT(char* dest,const size_t destlen,const char* src,size_t n)
 {
   if (dest==0) return 0;
@@ -87,13 +87,13 @@ char *STRNCAT(char* dest,const size_t destlen,const char* src,size_t n)
   return dest;
 }
 
-// °²È«µÄsprintfº¯Êý¡£
-// ½«¿É±ä²ÎÊý(...)°´ÕÕfmtÃèÊöµÄ¸ñÊ½Êä³öµ½dest×Ö·û´®ÖÐ¡£
-// dest£ºÊä³ö×Ö·û´®£¬²»ÐèÒª³õÊ¼»¯£¬ÔÚSPRINTFº¯ÊýÖÐ»á¶ÔËü½øÐÐ³õÊ¼»¯¡£
-// destlen£ºÊä³ö×Ö·û´®destÕ¼ÓÃÄÚ´æµÄ´óÐ¡£¬Èç¹û¸ñÊ½»¯ºóµÄ×Ö·û´®ÄÚÈÝµÄ³¤¶È´óÓÚdestlen-1£¬ºóÃæµÄÄÚÈÝ½«¶ªÆú¡£
-// fmt£º¸ñÊ½¿ØÖÆÃèÊö¡£
-// ...£ºÌî³äµ½¸ñÊ½¿ØÖÆÃèÊöfmtÖÐµÄ²ÎÊý¡£
-// ·µ»ØÖµ£º¸ñÊ½»¯ºóµÄÄÚÈÝµÄ³¤¶È£¬³ÌÐòÔ±Ò»°ã²»¹ØÐÄ·µ»ØÖµ¡£
+// ï¿½ï¿½È«ï¿½ï¿½sprintfï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½É±ï¿½ï¿½ï¿½ï¿½(...)ï¿½ï¿½ï¿½ï¿½fmtï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½destï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½
+// destï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½SPRINTFï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+// destlenï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destÕ¼ï¿½ï¿½ï¿½Ú´ï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ³ï¿½ï¿½È´ï¿½ï¿½ï¿½destlen-1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// fmtï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ...ï¿½ï¿½ï¿½ï¿½äµ½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fmtï¿½ÐµÄ²ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ³ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½Ô±Ò»ï¿½ã²»ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Öµï¿½ï¿½
 int SPRINTF(char *dest,const size_t destlen,const char *fmt,...)
 {
   if (dest==0) return -1;
@@ -108,14 +108,14 @@ int SPRINTF(char *dest,const size_t destlen,const char *fmt,...)
   return strlen(dest);
 }
 
-// °²È«µÄsnprintfº¯Êý¡£
-// ½«¿É±ä²ÎÊý(...)°´ÕÕfmtÃèÊöµÄ¸ñÊ½Êä³öµ½dest×Ö·û´®ÖÐ¡£
-// dest£ºÊä³ö×Ö·û´®£¬²»ÐèÒª³õÊ¼»¯£¬ÔÚSNPRINTFº¯ÊýÖÐ»á¶ÔËü½øÐÐ³õÊ¼»¯¡£
-// destlen£ºÊä³ö×Ö·û´®destÕ¼ÓÃÄÚ´æµÄ´óÐ¡£¬Èç¹û¸ñÊ½»¯ºóµÄ×Ö·û´®ÄÚÈÝµÄ³¤¶È´óÓÚdestlen-1£¬ºóÃæµÄÄÚÈÝ½«¶ªÆú¡£
-// n£º°Ñ¸ñÊ½»¯ºóµÄ×Ö·û´®½ØÈ¡n-1´æ·Åµ½destÖÐ£¬Èç¹ûn>destlen£¬ÔòÈ¡destlen-1¡£
-// fmt£º¸ñÊ½¿ØÖÆÃèÊö¡£
-// ...£ºÌî³äµ½¸ñÊ½¿ØÖÆÃèÊöfmtÖÐµÄ²ÎÊý¡£
-// ·µ»ØÖµ£º¸ñÊ½»¯ºóµÄÄÚÈÝµÄ³¤¶È£¬³ÌÐòÔ±Ò»°ã²»¹ØÐÄ·µ»ØÖµ¡£
+// ï¿½ï¿½È«ï¿½ï¿½snprintfï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½É±ï¿½ï¿½ï¿½ï¿½(...)ï¿½ï¿½ï¿½ï¿½fmtï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½destï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½
+// destï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½SNPRINTFï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+// destlenï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½destÕ¼ï¿½ï¿½ï¿½Ú´ï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ³ï¿½ï¿½È´ï¿½ï¿½ï¿½destlen-1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// nï¿½ï¿½ï¿½Ñ¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½È¡n-1ï¿½ï¿½Åµï¿½destï¿½Ð£ï¿½ï¿½ï¿½ï¿½n>destlenï¿½ï¿½ï¿½ï¿½È¡destlen-1ï¿½ï¿½
+// fmtï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ...ï¿½ï¿½ï¿½ï¿½äµ½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fmtï¿½ÐµÄ²ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ³ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½Ô±Ò»ï¿½ã²»ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Öµï¿½ï¿½
 int SNPRINTF(char *dest,const size_t destlen,size_t n,const char *fmt,...)
 {
   if (dest==0) return -1;
@@ -133,9 +133,9 @@ int SNPRINTF(char *dest,const size_t destlen,size_t n,const char *fmt,...)
   return strlen(dest);
 }
 
-// É¾³ý×Ö·û´®×ó±ßÖ¸¶¨µÄ×Ö·û¡£
-// str£º´ý´¦ÀíµÄ×Ö·û´®¡£
-// chr£ºÐèÒªÉ¾³ýµÄ×Ö·û¡£
+// É¾ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+// strï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// chrï¿½ï¿½ï¿½ï¿½ÒªÉ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
 void DeleteLChar(char *str,const char chr)
 {
   if (str == 0) return;
@@ -157,9 +157,9 @@ void DeleteLChar(char *str,const char chr)
   return;
 }
 
-// É¾³ý×Ö·û´®ÓÒ±ßÖ¸¶¨µÄ×Ö·û¡£
-// str£º´ý´¦ÀíµÄ×Ö·û´®¡£
-// chr£ºÐèÒªÉ¾³ýµÄ×Ö·û¡£
+// É¾ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ò±ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+// strï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// chrï¿½ï¿½ï¿½ï¿½ÒªÉ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
 void DeleteRChar(char *str,const char chr)
 {
   if (str == 0) return;
@@ -177,17 +177,17 @@ void DeleteRChar(char *str,const char chr)
   }
 }
 
-// É¾³ý×Ö·û´®×óÓÒÁ½±ßÖ¸¶¨µÄ×Ö·û¡£
-// str£º´ý´¦ÀíµÄ×Ö·û´®¡£
-// chr£ºÐèÒªÉ¾³ýµÄ×Ö·û¡£
+// É¾ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+// strï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// chrï¿½ï¿½ï¿½ï¿½ÒªÉ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
 void DeleteLRChar(char *str,const char chr)
 {
   DeleteLChar(str,chr);
   DeleteRChar(str,chr);
 }
 
-// °Ñ×Ö·û´®ÖÐµÄÐ¡Ð´×ÖÄ¸×ª»»³É´óÐ´£¬ºöÂÔ²»ÊÇ×ÖÄ¸µÄ×Ö·û¡£
-// str£º´ý×ª»»µÄ×Ö·û´®£¬Ö§³Öchar[]ºÍstringÁ½ÖÖÀàÐÍ¡£
+// ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ð¡Ð´ï¿½ï¿½Ä¸×ªï¿½ï¿½ï¿½É´ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+// strï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½char[]ï¿½ï¿½stringï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½
 void ToUpper(char *str)
 {
   if (str == 0) return;
@@ -218,8 +218,8 @@ void ToUpper(string &str)
   return;
 }
 
-// °Ñ×Ö·û´®ÖÐµÄ´óÐ´×ÖÄ¸×ª»»³ÉÐ¡Ð´£¬ºöÂÔ²»ÊÇ×ÖÄ¸µÄ×Ö·û¡£
-// str£º´ý×ª»»µÄ×Ö·û´®£¬Ö§³Öchar[]ºÍstringÁ½ÖÖÀàÐÍ¡£
+// ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ÐµÄ´ï¿½Ð´ï¿½ï¿½Ä¸×ªï¿½ï¿½ï¿½ï¿½Ð¡Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+// strï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½char[]ï¿½ï¿½stringï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½
 void ToLower(char *str)
 {
   if (str == 0) return;
@@ -250,25 +250,25 @@ void ToLower(string &str)
   return;
 }
 
-// ×Ö·û´®Ìæ»»º¯Êý
-// ÔÚ×Ö·û´®strÖÐ£¬Èç¹û´æÔÚ×Ö·û´®str1£¬¾ÍÌæ»»Îª×Ö·û´®str2¡£
-// str£º´ý´¦ÀíµÄ×Ö·û´®¡£
-// str1£º¾ÉµÄÄÚÈÝ¡£
-// str2£ºÐÂµÄÄÚÈÝ¡£
-// bloop£ºÊÇ·ñÑ­»·Ö´ÐÐÌæ»»¡£
-// ×¢Òâ£º
-// 1¡¢Èç¹ûstr2±Èstr1Òª³¤£¬Ìæ»»ºóstr»á±ä³¤£¬ËùÒÔ±ØÐë±£Ö¤strÓÐ×ã¹»µÄ³¤¶È£¬·ñÔòÄÚ´æ»áÒç³ö¡£
-// 2¡¢Èç¹ûstr2ÖÐ°üº¯ÁËstr1µÄÄÚÈÝ£¬ÇÒbloopÎªtrue£¬´æÔÚÂß¼­´íÎó£¬½«²»Ö´ÐÐÈÎºÎÌæ»»¡£
+// ï¿½Ö·ï¿½ï¿½ï¿½ï¿½æ»»ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½strï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½str1ï¿½ï¿½ï¿½ï¿½ï¿½æ»»Îªï¿½Ö·ï¿½ï¿½ï¿½str2ï¿½ï¿½
+// strï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// str1ï¿½ï¿½ï¿½Éµï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+// str2ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+// bloopï¿½ï¿½ï¿½Ç·ï¿½Ñ­ï¿½ï¿½Ö´ï¿½ï¿½ï¿½æ»»ï¿½ï¿½
+// ×¢ï¿½â£º
+// 1ï¿½ï¿½ï¿½ï¿½ï¿½str2ï¿½ï¿½str1Òªï¿½ï¿½ï¿½ï¿½ï¿½æ»»ï¿½ï¿½strï¿½ï¿½ä³¤ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ë±£Ö¤strï¿½ï¿½ï¿½ã¹»ï¿½Ä³ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// 2ï¿½ï¿½ï¿½ï¿½ï¿½str2ï¿½Ð°ï¿½ï¿½ï¿½ï¿½ï¿½str1ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½bloopÎªtrueï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ó£¬½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Îºï¿½ï¿½æ»»ï¿½ï¿½
 void UpdateStr(char *str,const char *str1,const char *str2,bool bloop)
 {
   if (str == 0) return;
   if (strlen(str) == 0) return;
   if ( (str1 == 0) || (str2 == 0) ) return;
 
-  // Èç¹ûbloopÎªtrue²¢ÇÒstr2ÖÐ°üº¯ÁËstr1µÄÄÚÈÝ£¬Ö±½Ó·µ»Ø£¬ÒòÎª»á½øÈëËÀÑ­»·£¬×îÖÕµ¼ÖÂÄÚ´æÒç³ö¡£
+  // ï¿½ï¿½ï¿½bloopÎªtrueï¿½ï¿½ï¿½ï¿½str2ï¿½Ð°ï¿½ï¿½ï¿½ï¿½ï¿½str1ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½Ö±ï¿½Ó·ï¿½ï¿½Ø£ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   if ( (bloop==true) && (strstr(str2,str1)>0) ) return;
 
-  // ¾¡¿ÉÄÜ·ÖÅä¸ü¶àµÄ¿Õ¼ä£¬µ«ÈÔÓÐ¿ÉÄÜ³öÏÖÄÚ´æÒç³öµÄÇé¿ö£¬×îºÃÓÅ»¯³Éstring¡£
+  // ï¿½ï¿½ï¿½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Õ¼ä£¬ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½Ü³ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å»ï¿½ï¿½ï¿½stringï¿½ï¿½
   int ilen=strlen(str)*10;
   if (ilen<1000) ilen=1000;
 
@@ -301,11 +301,11 @@ void UpdateStr(char *str,const char *str1,const char *str2,bool bloop)
   }
 }
 
-// ´ÓÒ»¸ö×Ö·û´®ÖÐÌáÈ¡³öÊý×ÖµÄÄÚÈÝ£¬´æ·Åµ½ÁíÒ»¸ö×Ö·û´®ÖÐ¡£
-// src£ºÔ´×Ö·û´®¡£
-// dest£ºÄ¿±ê×Ö·û´®¡£
-// bsigned£ºÊÇ·ñ°üÀ¨·ûºÅ£¨+ºÍ-£©£¬true-°üÀ¨£»false-²»°üÀ¨¡£
-// bdot£ºÊÇ·ñ°üÀ¨Ð¡ÊýµãµÄÔ²µã·ûºÅ£¬true-°üÀ¨£»false-²»°üÀ¨¡£
+// ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½Åµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½
+// srcï¿½ï¿½Ô´ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// destï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// bsignedï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½+ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½true-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½false-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// bdotï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½Å£ï¿½true-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½false-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 void PickNumber(const char *src,char *dest,const bool bsigned,const bool bdot)
 {
   if (dest==0) return;
@@ -344,19 +344,19 @@ void PickNumber(const char *src,char *dest,const bool bsigned,const bool bdot)
   dest[iposdst]=0;
 }
 
-// ÕýÔò±í´ïÊ½£¬ÅÐ¶ÏÒ»¸ö×Ö·û´®ÊÇ·ñÆ¥ÅäÁíÒ»¸ö×Ö·û´®¡£
-// str£ºÐèÒªÅÐ¶ÏµÄ×Ö·û´®£¬¾«È·±íÊ¾µÄ×Ö·û´®£¬ÈçÎÄ¼þÃû"freecplus.cpp"¡£
-// rules£ºÆ¥Åä¹æÔò±í´ïÊ½£¬ÓÃÐÇºÅ"*"±íÊ¾ÈÎÒâ×Ö·û´®£¬¶à¸ö×Ö·û´®Ö®¼äÓÃ°ë½ÇµÄ¶ººÅ·Ö¸ô£¬Èç"*.h,*.cpp"¡£
-// ×¢Òâ£¬str²ÎÊý²»Ö§³Ö"*"£¬rules²ÎÊýÖ§³Ö"*"£¬º¯ÊýÔÚÅÐ¶ÏstrÊÇ·ñÆ¥ÅärulesµÄÊ±ºò£¬»áºöÂÔ×ÖÄ¸µÄ´óÐ¡Ð´¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ð¶ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// strï¿½ï¿½ï¿½ï¿½Òªï¿½Ð¶Ïµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½"freecplus.cpp"ï¿½ï¿½
+// rulesï¿½ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Çºï¿½"*"ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½Ã°ï¿½ÇµÄ¶ï¿½ï¿½Å·Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½"*.h,*.cpp"ï¿½ï¿½
+// ×¢ï¿½â£¬strï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½"*"ï¿½ï¿½rulesï¿½ï¿½ï¿½ï¿½Ö§ï¿½ï¿½"*"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½strï¿½Ç·ï¿½Æ¥ï¿½ï¿½rulesï¿½ï¿½Ê±ï¿½ò£¬»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ä´ï¿½Ð¡Ð´ï¿½ï¿½
 bool MatchStr(const string str,const string rules)
 {
-  // Èç¹ûÓÃÓÚ±È½ÏµÄ×Ö·ûÊÇ¿ÕµÄ£¬·µ»Øfalse
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±È½Ïµï¿½ï¿½Ö·ï¿½ï¿½Ç¿ÕµÄ£ï¿½ï¿½ï¿½ï¿½ï¿½false
   if (rules.size() == 0) return false;
 
-  // Èç¹û±»±È½ÏµÄ×Ö·û´®ÊÇ"*"£¬·µ»Øtrue
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½Ïµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½"*"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½true
   if (rules == "*") return true;
 
-  // ´¦ÀíÎÄ¼þÃûÆ¥Åä¹æÔòÖÐµÄÊ±¼äÆ¥Åädd-nn.mm
+  // ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ê±ï¿½ï¿½Æ¥ï¿½ï¿½dd-nn.mm
   char strTemp[2049];
   memset(strTemp,0,sizeof(strTemp));
   strncpy(strTemp,rules.c_str(),2000);
@@ -370,7 +370,7 @@ bool MatchStr(const string str,const string rules)
   strFileName=str;
   strMatchStr=strTemp;
 
-  // °Ñ×Ö·û´®¶¼×ª»»³É´óÐ´ºóÔÙÀ´±È½Ï
+  // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½É´ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½ï¿½
   ToUpper(strFileName);
   ToUpper(strMatchStr);
 
@@ -378,7 +378,7 @@ bool MatchStr(const string str,const string rules)
 
   for (ii=0;ii<CmdStr.CmdCount();ii++)
   {
-    // Èç¹ûÎª¿Õ£¬¾ÍÒ»¶¨ÒªÌø¹ý£¬·ñÔò¾Í»á±»ÅäÉÏ
+    // ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»á±»ï¿½ï¿½ï¿½ï¿½
     if (CmdStr.m_vCmdStr[ii].empty() == true) continue;
 
     iPOS1=iPOS2=0;
@@ -386,13 +386,13 @@ bool MatchStr(const string str,const string rules)
 
     for (jj=0;jj<CmdSubStr.CmdCount();jj++)
     {
-      // Èç¹ûÊÇÎÄ¼þÃûµÄÊ×²¿
+      // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½
       if (jj == 0)
       {
         if (strncmp(strFileName.c_str(),CmdSubStr.m_vCmdStr[jj].c_str(),CmdSubStr.m_vCmdStr[jj].size()) != 0) break;
       }
 
-      // Èç¹ûÊÇÎÄ¼þÃûµÄÎ²²¿
+      // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½
       if (jj == CmdSubStr.CmdCount()-1)
       {
         if (strcmp(strFileName.c_str()+strFileName.size()-CmdSubStr.m_vCmdStr[jj].size(),CmdSubStr.m_vCmdStr[jj].c_str()) != 0) break;
@@ -411,16 +411,16 @@ bool MatchStr(const string str,const string rules)
   return false;
 }
 
-// ÕýÔò±í´ïÊ½£¬ÅÐ¶ÏÒ»¸ö×Ö·û´®ÊÇ·ñÆ¥ÅäÁíÒ»¸ö×Ö·û´®¡£
-// ±£ÁôMatchFileNameº¯ÊýÊÇÎªÁË¼æÈÝÖ®Ç°µÄ°æ±¾¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ð¶ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½MatchFileNameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ë¼ï¿½ï¿½ï¿½Ö®Ç°ï¿½Ä°æ±¾ï¿½ï¿½
 bool MatchFileName(const string in_FileName,const string in_MatchStr)
 {
   return MatchStr(in_FileName,in_MatchStr);
 }
 
-// Í³¼Æ×Ö·û´®µÄ×ÖÊý£¬È«½ÇµÄºº×ÖºÍÈ«½ÇµÄ±êµã·ûºÅËãÒ»¸ö×Ö£¬°ë½ÇµÄºº×ÖºÍ°ë½ÇµÄ±êµã·ûºÅÒ²ËãÒ»¸ö×Ö¡£
-// str£º´ýÍ³¼ÆµÄ×Ö·û´®¡£
-// ·µ»ØÖµ£º×Ö·û´®strµÄ×ÖÊý¡£
+// Í³ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ÇµÄºï¿½ï¿½Öºï¿½È«ï¿½ÇµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ÇµÄºï¿½ï¿½ÖºÍ°ï¿½ÇµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö¡ï¿½
+// strï¿½ï¿½ï¿½ï¿½Í³ï¿½Æµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½strï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 int Words(const char *str)
 {
   int  wlen=0;
@@ -450,7 +450,7 @@ int Words(const char *str)
   return wlen;
 }
 
-CFile::CFile()   // ÀàµÄ¹¹Ôìº¯Êý
+CFile::CFile()   // ï¿½ï¿½Ä¹ï¿½ï¿½ìº¯ï¿½ï¿½
 {
   m_fp=0;
   m_bEnBuffer=true;
@@ -458,23 +458,23 @@ CFile::CFile()   // ÀàµÄ¹¹Ôìº¯Êý
   memset(m_filenametmp,0,sizeof(m_filenametmp));
 }
 
-// ¹Ø±ÕÎÄ¼þÖ¸Õë
+// ï¿½Ø±ï¿½ï¿½Ä¼ï¿½Ö¸ï¿½ï¿½
 void CFile::Close() 
 {
   if (m_fp==0) return;
 
-  fclose(m_fp);  // ¹Ø±ÕÎÄ¼þÖ¸Õë
+  fclose(m_fp);  // ï¿½Ø±ï¿½ï¿½Ä¼ï¿½Ö¸ï¿½ï¿½
 
   m_fp=0;
   memset(m_filename,0,sizeof(m_filename));
 
-  // Èç¹û´æÔÚÁÙÊ±ÎÄ¼þ£¬¾ÍÉ¾³ýËü¡£
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   if (strlen(m_filenametmp)!=0) remove(m_filenametmp);
 
   memset(m_filenametmp,0,sizeof(m_filenametmp));
 }
 
-// ÅÐ¶ÏÎÄ¼þÊÇ·ñÒÑ´ò¿ª
+// ï¿½Ð¶ï¿½ï¿½Ä¼ï¿½ï¿½Ç·ï¿½ï¿½Ñ´ï¿½
 bool CFile::IsOpened()
 {
   if (m_fp==0) return false;
@@ -482,12 +482,12 @@ bool CFile::IsOpened()
   return true;
 }
 
-// ¹Ø±ÕÎÄ¼þÖ¸Õë£¬²¢É¾³ýÎÄ¼þ
+// ï¿½Ø±ï¿½ï¿½Ä¼ï¿½Ö¸ï¿½ë£¬ï¿½ï¿½É¾ï¿½ï¿½ï¿½Ä¼ï¿½
 bool CFile::CloseAndRemove()
 {
   if (m_fp==0) return true;
 
-  fclose(m_fp);  // ¹Ø±ÕÎÄ¼þÖ¸Õë
+  fclose(m_fp);  // ï¿½Ø±ï¿½ï¿½Ä¼ï¿½Ö¸ï¿½ï¿½
 
   m_fp=0;
 
@@ -499,12 +499,12 @@ bool CFile::CloseAndRemove()
   return true;
 }
 
-CFile::~CFile()   // ÀàµÄÎö¹¹º¯Êý
+CFile::~CFile()   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 {
   Close();
 }
 
-// ´ò¿ªÎÄ¼þ£¬²ÎÊýÓëFOPENÏàÍ¬£¬´ò¿ª³É¹¦true£¬Ê§°Ü·µ»Øfalse
+// ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½FOPENï¿½ï¿½Í¬ï¿½ï¿½ï¿½ò¿ª³É¹ï¿½trueï¿½ï¿½Ê§ï¿½Ü·ï¿½ï¿½ï¿½false
 bool CFile::Open(const char *filename,const char *openmode,bool bEnBuffer)
 {
   Close();
@@ -520,7 +520,7 @@ bool CFile::Open(const char *filename,const char *openmode,bool bEnBuffer)
   return true;
 }
 
-// ×¨Îª¸ÄÃû¶ø´ò¿ªÎÄ¼þ£¬²ÎÊýÓëfopenÏàÍ¬£¬´ò¿ª³É¹¦true£¬Ê§°Ü·µ»Øfalse
+// ×¨Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fopenï¿½ï¿½Í¬ï¿½ï¿½ï¿½ò¿ª³É¹ï¿½trueï¿½ï¿½Ê§ï¿½Ü·ï¿½ï¿½ï¿½false
 bool CFile::OpenForRename(const char *filename,const char *openmode,bool bEnBuffer)
 {
   Close();
@@ -538,12 +538,12 @@ bool CFile::OpenForRename(const char *filename,const char *openmode,bool bEnBuff
   return true;
 }
 
-// ¹Ø±ÕÎÄ¼þ²¢¸ÄÃû
+// ï¿½Ø±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 bool CFile::CloseAndRename()
 {
   if (m_fp==0) return false;
 
-  fclose(m_fp);  // ¹Ø±ÕÎÄ¼þÖ¸Õë
+  fclose(m_fp);  // ï¿½Ø±ï¿½ï¿½Ä¼ï¿½Ö¸ï¿½ï¿½
 
   m_fp=0;
 
@@ -561,7 +561,7 @@ bool CFile::CloseAndRename()
   return true;
 }
 
-// µ÷ÓÃfprintfÏòÎÄ¼þÐ´ÈëÊý¾Ý
+// ï¿½ï¿½ï¿½ï¿½fprintfï¿½ï¿½ï¿½Ä¼ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 void CFile::Fprintf(const char *fmt,...)
 {
   if ( m_fp == 0 ) return;
@@ -574,25 +574,25 @@ void CFile::Fprintf(const char *fmt,...)
   if ( m_bEnBuffer == false ) fflush(m_fp);
 }
 
-// µ÷ÓÃfgets´ÓÎÄ¼þÖÐ¶ÁÈ¡Ò»ÐÐ£¬bDelCRT=trueÉ¾³ý»»ÐÐ·û£¬false²»É¾³ý£¬È±Ê¡Îªfalse
+// ï¿½ï¿½ï¿½ï¿½fgetsï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð¶ï¿½È¡Ò»ï¿½Ð£ï¿½bDelCRT=trueÉ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½falseï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½È±Ê¡Îªfalse
 bool CFile::Fgets(char *buffer,const int readsize,bool bdelcrt)
 {
   if ( m_fp == 0 ) return false;
 
-  memset(buffer,0,readsize+1);  // µ÷ÓÃÕß±ØÐë±£Ö¤bufferµÄ¿Õ¼ä×ã¹»£¬·ñÔòÕâÀï»áÄÚ´æÒç³ö¡£
+  memset(buffer,0,readsize+1);  // ï¿½ï¿½ï¿½ï¿½ï¿½ß±ï¿½ï¿½ë±£Ö¤bufferï¿½Ä¿Õ¼ï¿½ï¿½ã¹»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
   if (fgets(buffer,readsize,m_fp) == 0) return false;
 
   if (bdelcrt==true)
   {
-    DeleteRChar(buffer,'\n'); DeleteRChar(buffer,'\r');  // Èç¹ûÎÄ¼þÊÇwindows¸ñÊ½£¬»¹ÒªÉ¾³ý'\r'¡£
+    DeleteRChar(buffer,'\n'); DeleteRChar(buffer,'\r');  // ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½windowsï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ÒªÉ¾ï¿½ï¿½'\r'ï¿½ï¿½
   }
 
   return true;
 }
 
-// ´ÓÎÄ¼þÎÄ¼þÖÐ¶ÁÈ¡Ò»ÐÐ
-// strEndStrÊÇÒ»ÐÐÊý¾ÝµÄ½áÊø±êÖ¾£¬Èç¹ûÎª¿Õ£¬ÔòÒÔ»»ÐÐ·û"\n"Îª½áÊø±êÖ¾¡£
+// ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¼ï¿½ï¿½Ð¶ï¿½È¡Ò»ï¿½ï¿½
+// strEndStrï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½Ð·ï¿½"\n"Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½
 bool CFile::FFGETS(char *buffer,const int readsize,const char *endbz)
 {
   if ( m_fp == 0 ) return false;
@@ -600,7 +600,7 @@ bool CFile::FFGETS(char *buffer,const int readsize,const char *endbz)
   return FGETS(m_fp,buffer,readsize,endbz);
 }
 
-// µ÷ÓÃfread´ÓÎÄ¼þÖÐ¶ÁÈ¡Êý¾Ý¡£
+// ï¿½ï¿½ï¿½ï¿½freadï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð¶ï¿½È¡ï¿½ï¿½ï¿½Ý¡ï¿½
 size_t CFile::Fread(void *ptr, size_t size)
 {
   if ( m_fp == 0 ) return -1;
@@ -608,7 +608,7 @@ size_t CFile::Fread(void *ptr, size_t size)
   return fread(ptr,1,size,m_fp);
 }
 
-// µ÷ÓÃfwriteÏòÎÄ¼þÖÐÐ´Êý¾Ý
+// ï¿½ï¿½ï¿½ï¿½fwriteï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½
 size_t CFile::Fwrite(const void *ptr, size_t size )
 {
   if ( m_fp == 0 ) return -1;
@@ -621,17 +621,17 @@ size_t CFile::Fwrite(const void *ptr, size_t size )
 }
 
 
-// ´ÓÎÄ±¾ÎÄ¼þÖÐ¶ÁÈ¡Ò»ÐÐ¡£
-// fp£ºÒÑ´ò¿ªµÄÎÄ¼þÖ¸Õë¡£
-// buffer£ºÓÃÓÚ´æ·Å¶ÁÈ¡µÄÄÚÈÝ¡£
-// readsize£º±¾´Î´òËã¶ÁÈ¡µÄ×Ö½ÚÊý£¬Èç¹ûÒÑ¾­¶ÁÈ¡µ½ÁË½áÊø±êÖ¾£¬º¯Êý·µ»Ø¡£
-// endbz£ºÐÐÄÚÈÝ½áÊøµÄ±êÖ¾£¬È±Ê¡Îª¿Õ£¬±íÊ¾ÐÐÄÚÈÝÒÔ"\n"Îª½áÊø±êÖ¾¡£
-// ·µ»ØÖµ£ºtrue-³É¹¦£»false-Ê§°Ü£¬Ò»°ãÇé¿öÏÂ£¬Ê§°Ü¿ÉÒÔÈÏÎªÊÇÎÄ¼þÒÑ½áÊø¡£
+// ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½ï¿½Ð¶ï¿½È¡Ò»ï¿½Ð¡ï¿½
+// fpï¿½ï¿½ï¿½Ñ´ò¿ªµï¿½ï¿½Ä¼ï¿½Ö¸ï¿½ë¡£
+// bufferï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½Å¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+// readsizeï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ë½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¡ï¿½
+// endbzï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½Ö¾ï¿½ï¿½È±Ê¡Îªï¿½Õ£ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"\n"Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½true-ï¿½É¹ï¿½ï¿½ï¿½false-Ê§ï¿½Ü£ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½Ê§ï¿½Ü¿ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½
 bool FGETS(const FILE *fp,char *buffer,const int readsize,const char *endbz)
 {
   if ( fp == 0 ) return false;
 
-  memset(buffer,0,readsize+1);   // µ÷ÓÃÕß±ØÐë±£Ö¤bufferµÄ¿Õ¼ä×ã¹»£¬·ñÔòÕâÀï»áÄÚ´æÒç³ö¡£
+  memset(buffer,0,readsize+1);   // ï¿½ï¿½ï¿½ï¿½ï¿½ß±ï¿½ï¿½ë±£Ö¤bufferï¿½Ä¿Õ¼ï¿½ï¿½ã¹»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
   char strline[readsize+1];
 
@@ -641,7 +641,7 @@ bool FGETS(const FILE *fp,char *buffer,const int readsize,const char *endbz)
 
     if (fgets(strline,readsize,(FILE *)fp) == 0) break;
 
-    // ·ÀÖ¹bufferÒç³ö
+    // ï¿½ï¿½Ö¹bufferï¿½ï¿½ï¿½
     if ( (strlen(buffer)+strlen(strline)) >= (unsigned int)readsize ) break;
 
     strcat(buffer,strline);
@@ -659,13 +659,13 @@ CCmdStr::CCmdStr()
   m_vCmdStr.clear();
 }
 
-// °Ñ×Ö·û´®²ð·Öµ½m_vCmdStrÈÝÆ÷ÖÐ¡£
-// buffer£º´ý²ð·ÖµÄ×Ö·û´®¡£
-// sepstr£ºbuffer×Ö·û´®ÖÐ×Ö¶ÎÄÚÈÝµÄ·Ö¸ô·û£¬×¢Òâ£¬·Ö¸ô·ûÊÇ×Ö·û´®£¬Èç","¡¢" "¡¢"|"¡¢"~!~"¡£
-// bdelspace£ºÊÇ·ñÉ¾³ý²ð·ÖºóµÄ×Ö¶ÎÄÚÈÝÇ°ºóµÄ¿Õ¸ñ£¬true-É¾³ý£»false-²»É¾³ý£¬È±Ê¡É¾³ý¡£
+// ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½m_vCmdStrï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½
+// bufferï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+// sepstrï¿½ï¿½bufferï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ÝµÄ·Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½â£¬ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","ï¿½ï¿½" "ï¿½ï¿½"|"ï¿½ï¿½"~!~"ï¿½ï¿½
+// bdelspaceï¿½ï¿½ï¿½Ç·ï¿½É¾ï¿½ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ä¿Õ¸ï¿½true-É¾ï¿½ï¿½ï¿½ï¿½false-ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½È±Ê¡É¾ï¿½ï¿½ï¿½ï¿½
 void CCmdStr::SplitToCmd(const string buffer,const char *sepstr,const bool bdelspace)
 {
-  // Çå³ýËùÓÐµÄ¾ÉÊý¾Ý
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¾ï¿½ï¿½ï¿½ï¿½ï¿½
   m_vCmdStr.clear();
 
   int iPOS=0;
@@ -725,7 +725,7 @@ bool CCmdStr::GetValue(const int inum,char *value,const int ilen)
 {
   if ( (inum>=(int)m_vCmdStr.size()) || (value==0) ) return false;
 
-  if (ilen>0) memset(value,0,ilen+1);   // µ÷ÓÃÕß±ØÐë±£Ö¤valueµÄ¿Õ¼ä×ã¹»£¬·ñÔòÕâÀï»áÄÚ´æÒç³ö¡£
+  if (ilen>0) memset(value,0,ilen+1);   // ï¿½ï¿½ï¿½ï¿½ï¿½ß±ï¿½ï¿½ë±£Ö¤valueï¿½Ä¿Õ¼ï¿½ï¿½ã¹»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
   if ( (m_vCmdStr[inum].length()<=(unsigned int)ilen) || (ilen==0) )
   {
@@ -817,7 +817,7 @@ bool CCmdStr::GetValue(const int inum,bool *value)
   memset(strTemp,0,sizeof(strTemp));
   strncpy(strTemp,m_vCmdStr[inum].c_str(),10);
 
-  ToUpper(strTemp);  // ×ª»»Îª´óÐ´À´ÅÐ¶Ï¡£
+  ToUpper(strTemp);  // ×ªï¿½ï¿½Îªï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ð¶Ï¡ï¿½
   if (strcmp(strTemp,"TRUE")==0) (*value)=true; 
 
   return true;
@@ -832,7 +832,7 @@ bool GetXMLBuffer(const char *xmlbuffer,const char *fieldname,char *value,const 
 {
   if (value==0) return false;
 
-  if (ilen>0) memset(value,0,ilen+1);   // µ÷ÓÃÕß±ØÐë±£Ö¤valueµÄ¿Õ¼ä×ã¹»£¬·ñÔòÕâÀï»áÄÚ´æÒç³ö¡£
+  if (ilen>0) memset(value,0,ilen+1);   // ï¿½ï¿½ï¿½ï¿½ï¿½ß±ï¿½ï¿½ë±£Ö¤valueï¿½Ä¿Õ¼ï¿½ï¿½ã¹»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
   char *start=0,*end=0;
   char m_SFieldName[51],m_EFieldName[51];
@@ -886,7 +886,7 @@ bool GetXMLBuffer(const char *xmlbuffer,const char *fieldname,bool *value)
 
   if (GetXMLBuffer(xmlbuffer,fieldname,strTemp,10) == true)
   {
-    ToUpper(strTemp);  // ×ª»»Îª´óÐ´À´ÅÐ¶Ï¡£
+    ToUpper(strTemp);  // ×ªï¿½ï¿½Îªï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ð¶Ï¡ï¿½
     if (strcmp(strTemp,"TRUE")==0) { (*value)=true; return true; }
   }
 
@@ -983,10 +983,10 @@ bool GetXMLBuffer(const char *xmlbuffer,const char *fieldname,double *value)
   return false;
 }
 
-// °ÑÕûÊý±íÊ¾µÄÊ±¼ä×ª»»Îª×Ö·û´®±íÊ¾µÄÊ±¼ä¡£
-// ltime£ºÕûÊý±íÊ¾µÄÊ±¼ä¡£
-// stime£º×Ö·û´®±íÊ¾µÄÊ±¼ä¡£
-// fmt£ºÊä³ö×Ö·û´®Ê±¼ästimeµÄ¸ñÊ½£¬ÓëLocalTimeº¯ÊýµÄfmt²ÎÊýÏàÍ¬£¬Èç¹ûfmtµÄ¸ñÊ½²»ÕýÈ·£¬stime½«Îª¿Õ¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ä¡£
+// ltimeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ä¡£
+// stimeï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ä¡£
+// fmtï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ê±ï¿½ï¿½stimeï¿½Ä¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½LocalTimeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fmtï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½fmtï¿½Ä¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½stimeï¿½ï¿½Îªï¿½Õ¡ï¿½
 void timetostr(const time_t ltime,char *stime,const char *fmt)
 {
   if (stime==0) return;
@@ -1097,11 +1097,11 @@ void timetostr(const time_t ltime,char *stime,const char *fmt)
 
 
 /*
-  È¡²Ù×÷ÏµÍ³µÄÊ±¼ä£¬²¢°ÑÕûÊý±íÊ¾µÄÊ±¼ä×ª»»Îª×Ö·û´®±íÊ¾µÄ¸ñÊ½¡£
-  stime£ºÓÃÓÚ´æ·Å»ñÈ¡µ½µÄÊ±¼ä×Ö·û´®¡£
-  timetvl£ºÊ±¼äµÄÆ«ÒÆÁ¿£¬µ¥Î»£ºÃë£¬0ÊÇÈ±Ê¡Öµ£¬±íÊ¾µ±Ç°Ê±¼ä£¬30±íÊ¾µ±Ç°Ê±¼ä30ÃëÖ®ºóµÄÊ±¼äµã£¬-30±íÊ¾µ±Ç°Ê±¼ä30ÃëÖ®Ç°µÄÊ±¼äµã¡£
-  fmt£ºÊä³öÊ±¼äµÄ¸ñÊ½£¬È±Ê¡ÊÇ"yyyy-mm-dd hh24:mi:ss"£¬Ä¿Ç°Ö§³ÖÒÔÏÂ¸ñÊ½£º
-  "yyyy-mm-dd hh24:mi:ss"£¬´Ë¸ñÊ½ÊÇÈ±Ê¡¸ñÊ½¡£
+  È¡ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ä¸ï¿½Ê½ï¿½ï¿½
+  stimeï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½Å»ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+  timetvlï¿½ï¿½Ê±ï¿½ï¿½ï¿½Æ«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ë£¬0ï¿½ï¿½È±Ê¡Öµï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ç°Ê±ï¿½ä£¬30ï¿½ï¿½Ê¾ï¿½ï¿½Ç°Ê±ï¿½ï¿½30ï¿½ï¿½Ö®ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ã£¬-30ï¿½ï¿½Ê¾ï¿½ï¿½Ç°Ê±ï¿½ï¿½30ï¿½ï¿½Ö®Ç°ï¿½ï¿½Ê±ï¿½ï¿½ã¡£
+  fmtï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½È±Ê¡ï¿½ï¿½"yyyy-mm-dd hh24:mi:ss"ï¿½ï¿½Ä¿Ç°Ö§ï¿½ï¿½ï¿½ï¿½ï¿½Â¸ï¿½Ê½ï¿½ï¿½
+  "yyyy-mm-dd hh24:mi:ss"ï¿½ï¿½ï¿½Ë¸ï¿½Ê½ï¿½ï¿½È±Ê¡ï¿½ï¿½Ê½ï¿½ï¿½
   "yyyymmddhh24miss"
   "yyyy-mm-dd"
   "yyyymmdd"
@@ -1111,10 +1111,10 @@ void timetostr(const time_t ltime,char *stime,const char *fmt)
   "hh24mi"
   "hh24"
   "mi"
-  ×¢Òâ£º
-    1£©Ð¡Ê±µÄ±íÊ¾·½·¨ÊÇhh24£¬²»ÊÇhh£¬ÕâÃ´×öµÄÄ¿µÄÊÇÎªÁË±£³ÖÓëÊý¾Ý¿âµÄÊ±¼ä±íÊ¾·½·¨Ò»ÖÂ£»
-    2£©ÒÔÉÏÁÐ³öÁË³£ÓÃµÄÊ±¼ä¸ñÊ½£¬Èç¹û²»ÄÜÂú×ãÄãÓ¦ÓÃ¿ª·¢µÄÐèÇó£¬ÇëÐÞ¸ÄÔ´´úÂëÔö¼Ó¸ü¶àµÄ¸ñÊ½Ö§³Ö£»
-    3£©µ÷ÓÃº¯ÊýµÄÊ±ºò£¬Èç¹ûfmtÓëÉÏÊö¸ñÊ½¶¼Æ¥Åä£¬stimeµÄÄÚÈÝ½«Îª¿Õ¡£
+  ×¢ï¿½â£º
+    1ï¿½ï¿½Ð¡Ê±ï¿½Ä±ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½hh24ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½hhï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½Îªï¿½Ë±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Â£ï¿½
+    2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½Ë³ï¿½ï¿½Ãµï¿½Ê±ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¸ï¿½ï¿½ï¿½Ä¸ï¿½Ê½Ö§ï¿½Ö£ï¿½
+    3ï¿½ï¿½ï¿½ï¿½ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½fmtï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Æ¥ï¿½ä£¬stimeï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½Îªï¿½Õ¡ï¿½
 */
 void LocalTime(char *stime,const char *fmt,const int timetvl)
 {
@@ -1154,14 +1154,14 @@ void CLogFile::Close()
   m_bEnBuffer=false;
 }
 
-// ´ò¿ªÈÕÖ¾ÎÄ¼þ¡£
-// filename£ºÈÕÖ¾ÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶£¬Èç¹ûÎÄ¼þÃûÖÐµÄÄ¿Â¼²»´æÔÚ£¬¾ÍÏÈ´´½¨Ä¿Â¼¡£
-// openmode£ºÈÕÖ¾ÎÄ¼þµÄ´ò¿ª·½Ê½£¬Óëfopen¿âº¯Êý´ò¿ªÎÄ¼þµÄ·½Ê½ÏàÍ¬£¬È±Ê¡ÖµÊÇ"a+"¡£
-// bBackup£ºÊÇ·ñ×Ô¶¯ÇÐ»»£¬true-ÇÐ»»£¬false-²»ÇÐ»»£¬ÔÚ¶à½ø³ÌµÄ·þÎñ³ÌÐòÖÐ£¬Èç¹û¶à¸ö½øÐÐ¹²ÓÃÒ»¸öÈÕÖ¾ÎÄ¼þ£¬bBackup±ØÐëÎªfalse¡£
-// bEnBuffer£ºÊÇ·ñÆôÓÃÎÄ¼þ»º³å»úÖÆ£¬true-ÆôÓÃ£¬false-²»ÆôÓÃ£¬Èç¹ûÆôÓÃ»º³åÇø£¬ÄÇÃ´Ð´½øÈÕÖ¾ÎÄ¼þÖÐµÄÄÚÈÝ²»»áÁ¢¼´Ð´ÈëÎÄ¼þ£¬È±Ê¡ÊÇ²»ÆôÓÃ¡£
+// ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½
+// filenameï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½È´ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½
+// openmodeï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½Ä´ò¿ª·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½fopenï¿½âº¯ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä·ï¿½Ê½ï¿½ï¿½Í¬ï¿½ï¿½È±Ê¡Öµï¿½ï¿½"a+"ï¿½ï¿½
+// bBackupï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ô¶ï¿½ï¿½Ð»ï¿½ï¿½ï¿½true-ï¿½Ð»ï¿½ï¿½ï¿½false-ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ÌµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½bBackupï¿½ï¿½ï¿½ï¿½Îªfalseï¿½ï¿½
+// bEnBufferï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½true-ï¿½ï¿½ï¿½Ã£ï¿½false-ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´Ð´ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½È±Ê¡ï¿½Ç²ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
 bool CLogFile::Open(const char *filename,const char *openmode,bool bBackup,bool bEnBuffer)
 {
-  // Èç¹ûÎÄ¼þÖ¸ÕëÊÇ´ò¿ªµÄ×´Ì¬£¬ÏÈ¹Ø±ÕËü¡£
+  // ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ö¸ï¿½ï¿½ï¿½Ç´ò¿ªµï¿½×´Ì¬ï¿½ï¿½ï¿½È¹Ø±ï¿½ï¿½ï¿½ï¿½ï¿½
   Close();
 
   strcpy(m_filename,filename);
@@ -1175,14 +1175,14 @@ bool CLogFile::Open(const char *filename,const char *openmode,bool bBackup,bool 
   return true;
 }
 
-// Èç¹ûÈÕÖ¾ÎÄ¼þ´óÓÚ100M£¬¾Í°Ñµ±Ç°µÄÈÕÖ¾ÎÄ¼þ±¸·Ý³ÉÀúÊ·ÈÕÖ¾ÎÄ¼þ£¬ÇÐ»»³É¹¦ºóÇå¿Õµ±Ç°ÈÕÖ¾ÎÄ¼þµÄÄÚÈÝ¡£
-// ±¸·ÝºóµÄÎÄ¼þ»áÔÚÈÕÖ¾ÎÄ¼þÃûºó¼ÓÉÏÈÕÆÚÊ±¼ä¡£
-// ×¢Òâ£¬ÔÚ¶à½ø³ÌµÄ³ÌÐòÖÐ£¬ÈÕÖ¾ÎÄ¼þ²»¿ÉÇÐ»»£¬¶àÏßµÄ³ÌÐòÖÐ£¬ÈÕÖ¾ÎÄ¼þ¿ÉÒÔÇÐ»»¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½100Mï¿½ï¿½ï¿½Í°Ñµï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½Ê·ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½Ç°ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+// ï¿½ï¿½ï¿½Ýºï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä¡£
+// ×¢ï¿½â£¬ï¿½Ú¶ï¿½ï¿½ï¿½ÌµÄ³ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµÄ³ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½
 bool CLogFile::BackupLogFile()
 {
   if (m_tracefp == 0) return false;
 
-  // ²»±¸·Ý
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   if (m_bBackup == false) return true;
 
   fseek(m_tracefp,0L,2);
@@ -1206,8 +1206,8 @@ bool CLogFile::BackupLogFile()
   return true;
 }
 
-// °ÑÄÚÈÝÐ´ÈëÈÕÖ¾ÎÄ¼þ£¬fmtÊÇ¿É±ä²ÎÊý£¬Ê¹ÓÃ·½·¨Óëprintf¿âº¯ÊýÏàÍ¬¡£
-// Write·½·¨»áÐ´Èëµ±Ç°µÄÊ±¼ä£¬WriteEx·½·¨²»Ð´Ê±¼ä¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½fmtï¿½Ç¿É±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½printfï¿½âº¯ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+// Writeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ëµ±Ç°ï¿½ï¿½Ê±ï¿½ä£¬WriteExï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´Ê±ï¿½ä¡£
 bool CLogFile::Write(const char *fmt,...)
 {
   if (m_tracefp == 0) return false;
@@ -1227,8 +1227,8 @@ bool CLogFile::Write(const char *fmt,...)
   return true;
 }
 
-// °ÑÄÚÈÝÐ´ÈëÈÕÖ¾ÎÄ¼þ£¬fmtÊÇ¿É±ä²ÎÊý£¬Ê¹ÓÃ·½·¨Óëprintf¿âº¯ÊýÏàÍ¬¡£
-// Write·½·¨»áÐ´Èëµ±Ç°µÄÊ±¼ä£¬WriteEx·½·¨²»Ð´Ê±¼ä¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½Ä¼ï¿½ï¿½ï¿½fmtï¿½Ç¿É±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½printfï¿½âº¯ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+// Writeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ëµ±Ç°ï¿½ï¿½Ê±ï¿½ä£¬WriteExï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´Ê±ï¿½ä¡£
 bool CLogFile::WriteEx(const char *fmt,...)
 {
   if (m_tracefp == 0) return false;
@@ -1307,7 +1307,7 @@ bool CIniFile::GetValue(const char *fieldname,double *value)
   return GetXMLBuffer(m_xmlbuffer.c_str(),fieldname,value);
 }
 
-// ¹Ø±ÕÈ«²¿µÄÐÅºÅºÍÊäÈëÊä³ö
+// ï¿½Ø±ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÅºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 void CloseIOAndSignal()
 {
   int ii=0;
@@ -1318,13 +1318,13 @@ void CloseIOAndSignal()
   }
 }
 
-// ¸ù¾Ý¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû»òÄ¿Â¼ÃûÖð¼¶µÄ´´½¨Ä¿Â¼¡£
-// pathorfilename£º¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû»òÄ¿Â¼Ãû¡£
-// bisfilename£ºËµÃ÷pathorfilenameµÄÀàÐÍ£¬true-pathorfilenameÊÇÎÄ¼þÃû£¬·ñÔòÊÇÄ¿Â¼Ãû£¬È±Ê¡ÖµÎªtrue¡£
-// ·µ»ØÖµ£ºtrue-´´½¨³É¹¦£¬false-´´½¨Ê§°Ü£¬Èç¹û·µ»ØÊ§°Ü£¬Ô­ÒòÓÐ´ó¸ÅÓÐÈýÖÖÇé¿ö£º1£©È¨ÏÞ²»×ã£» 2£©pathorfilename²ÎÊý²»ÊÇºÏ·¨µÄÎÄ¼þÃû»òÄ¿Â¼Ãû£»3£©´ÅÅÌ¿Õ¼ä²»×ã¡£
+// ï¿½ï¿½ï¿½Ý¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ð¼¶µÄ´ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½
+// pathorfilenameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½
+// bisfilenameï¿½ï¿½Ëµï¿½ï¿½pathorfilenameï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½true-pathorfilenameï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½È±Ê¡ÖµÎªtrueï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½true-ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½false-ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½Ô­ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½È¨ï¿½Þ²ï¿½ï¿½ã£» 2ï¿½ï¿½pathorfilenameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÇºÏ·ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½ï¿½Ì¿Õ¼ä²»ï¿½ã¡£
 bool MKDIR(const char *filename,bool bisfilename)
 {
-  // ¼ì²éÄ¿Â¼ÊÇ·ñ´æÔÚ£¬Èç¹û²»´æÔÚ£¬Öð¼¶´´½¨×ÓÄ¿Â¼
+  // ï¿½ï¿½ï¿½Ä¿Â¼ï¿½Ç·ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ð¼¶´ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
   char strPathName[301];
 
   int ilen=strlen(filename);
@@ -1338,24 +1338,32 @@ bool MKDIR(const char *filename,bool bisfilename)
 
     if (access(strPathName,F_OK) == 0) continue;
 
+#ifdef _WIN32
+    if (mkdir(strPathName) != 0) return false;
+#else
     if (mkdir(strPathName,0755) != 0) return false;
+#endif
   }
 
   if (bisfilename==false)
   {
     if (access(filename,F_OK) != 0)
     {
+#ifdef _WIN32
+      if (mkdir(filename) != 0) return false;
+#else
       if (mkdir(filename,0755) != 0) return false;
+#endif
     }
   }
 
   return true;
 }
 
-// ´ò¿ªÎÄ¼þ¡£
-// FOPENº¯Êýµ÷ÓÃfopen¿âº¯Êý´ò¿ªÎÄ¼þ£¬Èç¹ûÎÄ¼þÃûÖÐ°üº¬µÄÄ¿Â¼²»´æÔÚ£¬¾Í´´½¨Ä¿Â¼¡£
-// FOPENº¯ÊýµÄ²ÎÊýºÍ·µ»ØÖµÓëfopenº¯ÊýÍêÈ«ÏàÍ¬¡£
-// ÔÚÓ¦ÓÃ¿ª·¢ÖÐ£¬ÓÃFOPENº¯Êý´úÌæfopen¿âº¯Êý¡£
+// ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+// FOPENï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fopenï¿½âº¯ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ð°ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Í´ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½
+// FOPENï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Öµï¿½ï¿½fopenï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Í¬ï¿½ï¿½
+// ï¿½ï¿½Ó¦ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½FOPENï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fopenï¿½âº¯ï¿½ï¿½ï¿½ï¿½
 FILE *FOPEN(const char *filename,const char *mode)
 {
   if (MKDIR(filename) == false) return 0;
@@ -1363,9 +1371,9 @@ FILE *FOPEN(const char *filename,const char *mode)
   return fopen(filename,mode);
 }
 
-// »ñÈ¡ÎÄ¼þµÄ´óÐ¡¡£
-// filename£º´ý»ñÈ¡µÄÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû¡£
-// ·µ»ØÖµ£ºÈç¹ûÎÄ¼þ²»´æÔÚ»òÃ»ÓÐ·ÃÎÊÈ¨ÏÞ£¬·µ»Ø-1£¬³É¹¦·µ»ØÎÄ¼þµÄ´óÐ¡£¬µ¥Î»ÊÇ×Ö½Ú¡£
+// ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½Ä´ï¿½Ð¡ï¿½ï¿½
+// filenameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½Ã»ï¿½Ð·ï¿½ï¿½ï¿½È¨ï¿½Þ£ï¿½ï¿½ï¿½ï¿½ï¿½-1ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Ö½Ú¡ï¿½
 int FileSize(const char *filename)
 {
   struct stat st_filestat;
@@ -1375,10 +1383,10 @@ int FileSize(const char *filename)
   return st_filestat.st_size;
 }
 
-// ÖØÖÃÎÄ¼þµÄÐÞ¸ÄÊ±¼äÊôÐÔ¡£
-// filename£º´ýÖØÖÃµÄÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû¡£
-// stime£º×Ö·û´®±íÊ¾µÄÊ±¼ä£¬¸ñÊ½²»ÏÞ£¬µ«Ò»¶¨Òª°üÀ¨yyyymmddhh24miss£¬Ò»¸ö¶¼²»ÄÜÉÙ¡£
-// ·µ»ØÖµ£ºtrue-³É¹¦£»false-Ê§°Ü£¬Ê§°ÜµÄÔ­Òò±£´æÔÚerrnoÖÐ¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
+// filenameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+// stimeï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Þ£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½yyyymmddhh24missï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¡ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½true-ï¿½É¹ï¿½ï¿½ï¿½false-Ê§ï¿½Ü£ï¿½Ê§ï¿½Üµï¿½Ô­ï¿½ò±£´ï¿½ï¿½ï¿½errnoï¿½Ð¡ï¿½
 bool UTime(const char *filename,const char *mtime)
 {
   struct utimbuf stutimbuf;
@@ -1390,9 +1398,9 @@ bool UTime(const char *filename,const char *mtime)
   return true;
 }
 
-// °Ñ×Ö·û´®±íÊ¾µÄÊ±¼ä×ª»»ÎªÕûÊý±íÊ¾µÄÊ±¼ä¡£
-// stime£º×Ö·û´®±íÊ¾µÄÊ±¼ä£¬¸ñÊ½²»ÏÞ£¬µ«Ò»¶¨Òª°üÀ¨yyyymmddhh24miss£¬Ò»¸ö¶¼²»ÄÜÉÙ¡£
-// ·µ»ØÖµ£ºÕûÊý±íÊ¾µÄÊ±¼ä£¬Èç¹ûstimeµÄ¸ñÊ½²»ÕýÈ·£¬·µ»Ø-1¡£
+// ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ä¡£
+// stimeï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Þ£ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½yyyymmddhh24missï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¡ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½ï¿½stimeï¿½Ä¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-1ï¿½ï¿½
 time_t strtotime(const char *stime)
 {
   char strtime[21],yyyy[5],mm[3],dd[3],hh[3],mi[3],ss[3];
@@ -1428,13 +1436,13 @@ time_t strtotime(const char *stime)
   return mktime(&time_str);
 }
 
-// °Ñ×Ö·û´®±íÊ¾µÄÊ±¼ä¼ÓÉÏÒ»¸öÆ«ÒÆµÄÃëÊýºóµÃµ½Ò»¸öÐÂµÄ×Ö·û´®±íÊ¾µÄÊ±¼ä¡£
-// in_stime£ºÊäÈëµÄ×Ö·û´®¸ñÊ½µÄÊ±¼ä¡£
-// out_stime£ºÊä³öµÄ×Ö·û´®¸ñÊ½µÄÊ±¼ä¡£
-// timetvl£ºÐèÒªÆ«ÒÆµÄÃëÊý£¬ÕýÊýÍùºóÆ«ÒÆ£¬¸ºÊýÍùÇ°Æ«ÒÆ¡£
-// fmt£ºÊä³ö×Ö·û´®Ê±¼äout_stimeµÄ¸ñÊ½£¬ÓëLocalTimeº¯ÊýµÄfmt²ÎÊýÏàÍ¬¡£
-// ×¢Òâ£ºin_stimeºÍout_stime²ÎÊý¿ÉÒÔÊÇÍ¬Ò»¸ö±äÁ¿µÄµØÖ·£¬Èç¹ûµ÷ÓÃÊ§°Ü£¬out_stimeµÄÄÚÈÝ»áÇå¿Õ¡£
-// ·µ»ØÖµ£ºtrue-³É¹¦£¬false-Ê§°Ü£¬Èç¹û·µ»ØÊ§°Ü£¬¿ÉÒÔÈÏÎªÊÇin_stimeµÄ¸ñÊ½²»ÕýÈ·¡£
+// ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Æ«ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ò»ï¿½ï¿½ï¿½Âµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê±ï¿½ä¡£
+// in_stimeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ê±ï¿½ä¡£
+// out_stimeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ê±ï¿½ä¡£
+// timetvlï¿½ï¿½ï¿½ï¿½ÒªÆ«ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ«ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Æ«ï¿½Æ¡ï¿½
+// fmtï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ê±ï¿½ï¿½out_stimeï¿½Ä¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½LocalTimeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fmtï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+// ×¢ï¿½â£ºin_stimeï¿½ï¿½out_stimeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½out_stimeï¿½ï¿½ï¿½ï¿½ï¿½Ý»ï¿½ï¿½ï¿½Õ¡ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½true-ï¿½É¹ï¿½ï¿½ï¿½false-Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½in_stimeï¿½Ä¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½
 bool AddTime(const char *in_stime,char *out_stime,const int timetvl,const char *fmt)
 {
   if ( (in_stime==0) || (out_stime==0) ) return false;
@@ -1451,14 +1459,14 @@ bool AddTime(const char *in_stime,char *out_stime,const int timetvl,const char *
   return true;
 }
 
-// »ñÈ¡ÎÄ¼þµÄÊ±¼ä¡£
-// filename£º´ý»ñÈ¡µÄÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû¡£
-// mtime£ºÓÃÓÚ´æ·ÅÎÄ¼þµÄÊ±¼ä£¬¼´stat½á¹¹ÌåµÄst_mtime¡£
-// fmt£ºÉèÖÃÊ±¼äµÄÊä³ö¸ñÊ½£¬ÓëLocalTimeº¯ÊýÏàÍ¬£¬µ«È±Ê¡ÊÇ"yyyymmddhh24miss"¡£
-// ·µ»ØÖµ£ºÈç¹ûÎÄ¼þ²»´æÔÚ»òÃ»ÓÐ·ÃÎÊÈ¨ÏÞ£¬·µ»Øfalse£¬³É¹¦·µ»Øtrue¡£
+// ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½Ê±ï¿½ä¡£
+// filenameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+// mtimeï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½statï¿½á¹¹ï¿½ï¿½ï¿½st_mtimeï¿½ï¿½
+// fmtï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½LocalTimeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½È±Ê¡ï¿½ï¿½"yyyymmddhh24miss"ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½Ã»ï¿½Ð·ï¿½ï¿½ï¿½È¨ï¿½Þ£ï¿½ï¿½ï¿½ï¿½ï¿½falseï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½
 bool FileMTime(const char *filename,char *mtime,const char *fmt)
 {
-  // ÅÐ¶ÏÎÄ¼þÊÇ·ñ´æÔÚ¡£
+  // ï¿½Ð¶ï¿½ï¿½Ä¼ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ú¡ï¿½
   struct stat st_filestat;
 
   if (stat(filename,&st_filestat) < 0) return false;
@@ -1497,26 +1505,26 @@ void CDir::initdata()
   memset(m_AccessTime,0,sizeof(m_AccessTime));
 }
 
-// ÉèÖÃÎÄ¼þÊ±¼äµÄ¸ñÊ½£¬Ö§³Ö"yyyy-mm-dd hh24:mi:ss"ºÍ"yyyymmddhh24miss"Á½ÖÖ£¬È±Ê¡ÊÇÇ°Õß¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ê±ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½Ö§ï¿½ï¿½"yyyy-mm-dd hh24:mi:ss"ï¿½ï¿½"yyyymmddhh24miss"ï¿½ï¿½ï¿½Ö£ï¿½È±Ê¡ï¿½ï¿½Ç°ï¿½ß¡ï¿½
 void CDir::SetDateFMT(const char *in_DateFMT)
 {
   memset(m_DateFMT,0,sizeof(m_DateFMT));
   strcpy(m_DateFMT,in_DateFMT);
 }
 
-// ´ò¿ªÄ¿Â¼£¬»ñÈ¡Ä¿Â¼ÖÐµÄÎÄ¼þÁÐ±íÐÅÏ¢£¬´æ·ÅÓÚm_vFileNameÈÝÆ÷ÖÐ¡£
-// in_DirName£¬´ý´ò¿ªµÄÄ¿Â¼Ãû¡£
-// in_MatchStr£¬´ý»ñÈ¡ÎÄ¼þÃûµÄÆ¥Åä¹æÔò£¬²»Æ¥ÅäµÄÎÄ¼þ±»ºöÂÔ¡£
-// in_MaxCount£¬»ñÈ¡ÎÄ¼þµÄ×î´óÊýÁ¿£¬È±Ê¡ÖµÎª10000¸ö¡£
-// bAndChild£¬ÊÇ·ñ´ò¿ª¸÷¼¶×ÓÄ¿Â¼£¬È±Ê¡ÖµÎªfalse-²»´ò¿ª×ÓÄ¿Â¼¡£
-// bSort£¬ÊÇ·ñ¶Ô»ñÈ¡µ½µÄÎÄ¼þÁÐ±í£¨¼´m_vFileNameÈÝÆ÷ÖÐµÄÄÚÈÝ£©½øÐÐÅÅÐò£¬È±Ê¡ÖµÎªfalse-²»ÅÅÐò¡£
-// ·µ»ØÖµ£ºÈç¹ûin_DirName²ÎÊýÖ¸¶¨µÄÄ¿Â¼²»´æÔÚ£¬OpenDir·½·¨»á´´½¨¸ÃÄ¿Â¼£¬Èç¹û´´½¨Ê§°Ü£¬·µ»Øfalse£¬»¹ÓÐ£¬Èç¹ûµ±Ç°ÓÃ»§¶Ôin_DirNameÄ¿Â¼ÏÂµÄ×ÓÄ¿Â¼Ã»ÓÐ¶ÁÈ¡È¨ÏÞÒ²»á·µ»Øfalse£¬ÆäËüÕý³£Çé¿öÏÂ¶¼»á·µ»Øtrue¡£
+// ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½È¡Ä¿Â¼ï¿½Ðµï¿½ï¿½Ä¼ï¿½ï¿½Ð±ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½m_vFileNameï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½
+// in_DirNameï¿½ï¿½ï¿½ï¿½ï¿½ò¿ªµï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½
+// in_MatchStrï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½ò£¬²ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
+// in_MaxCountï¿½ï¿½ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È±Ê¡ÖµÎª10000ï¿½ï¿½ï¿½ï¿½
+// bAndChildï¿½ï¿½ï¿½Ç·ï¿½ò¿ª¸ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½È±Ê¡ÖµÎªfalse-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½
+// bSortï¿½ï¿½ï¿½Ç·ï¿½Ô»ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½m_vFileNameï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È±Ê¡ÖµÎªfalse-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½in_DirNameï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½OpenDirï¿½ï¿½ï¿½ï¿½ï¿½á´´ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½falseï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ã»ï¿½ï¿½ï¿½in_DirNameÄ¿Â¼ï¿½Âµï¿½ï¿½ï¿½Ä¿Â¼Ã»ï¿½Ð¶ï¿½È¡È¨ï¿½ï¿½Ò²ï¿½á·µï¿½ï¿½falseï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¶ï¿½ï¿½á·µï¿½ï¿½trueï¿½ï¿½
 bool CDir::OpenDir(const char *in_DirName,const char *in_MatchStr,const unsigned int in_MaxCount,const bool bAndChild,bool bSort)
 {
   m_pos=0;
   m_vFileName.clear();
 
-  // Èç¹ûÄ¿Â¼²»´æÔÚ£¬¾Í´´½¨¸ÃÄ¿Â¼
+  // ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Í´ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
   if (MKDIR(in_DirName,false) == false) return false;
 
   bool bRet=_OpenDir(in_DirName,in_MatchStr,in_MaxCount,bAndChild);
@@ -1529,7 +1537,7 @@ bool CDir::OpenDir(const char *in_DirName,const char *in_MatchStr,const unsigned
   return bRet;
 }
 
-// ÕâÊÇÒ»¸öµÝ¹éº¯Êý£¬ÓÃÓÚOpenDir()µÄµ÷ÓÃ£¬ÔÚCDirÀàµÄÍâ²¿²»ÐèÒªµ÷ÓÃËü¡£
+// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ý¹éº¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½OpenDir()ï¿½Äµï¿½ï¿½Ã£ï¿½ï¿½ï¿½CDirï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 bool CDir::_OpenDir(const char *in_DirName,const char *in_MatchStr,const unsigned int in_MaxCount,const bool bAndChild)
 {
   DIR *dir;
@@ -1543,7 +1551,7 @@ bool CDir::_OpenDir(const char *in_DirName,const char *in_MatchStr,const unsigne
 
   while ((st_fileinfo=readdir(dir)) != 0)
   {
-    // ÒÔ"."´òÍ·µÄÎÄ¼þ²»´¦Àí
+    // ï¿½ï¿½"."ï¿½ï¿½Í·ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     if (st_fileinfo->d_name[0]=='.') continue;
         
     memset(strTempFileName,0,sizeof(strTempFileName));
@@ -1554,7 +1562,7 @@ bool CDir::_OpenDir(const char *in_DirName,const char *in_MatchStr,const unsigne
 
     stat(strTempFileName,&st_filestat);
 
-    // ÅÐ¶ÏÊÇ·ñÊÇÄ¿Â¼
+    // ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ä¿Â¼
     if (S_ISDIR(st_filestat.st_mode))
     {
       if (bAndChild == true)
@@ -1592,7 +1600,7 @@ st_dev
 st_ino
   Number of the information node (the inode) for the file (UNIX-specific). On UNIX file systems, the inode describes the file date and time stamps, permissions, and content. When files are hard-linked to one another, they share the same inode. The inode, and therefore st_ino, has no meaning in the FAT, HPFS, or NTFS file systems.
 st_mode
-  Bit mask for file-mode information. The _S_IFDIR bit is set if path specifies a directory; the _S_IFREG bit is set if path specifies an ordinary file or a device. User read/write bits are set according to the file¡¯s permission mode; user execute bits are set according to the filename extension.
+  Bit mask for file-mode information. The _S_IFDIR bit is set if path specifies a directory; the _S_IFREG bit is set if path specifies an ordinary file or a device. User read/write bits are set according to the fileï¿½ï¿½s permission mode; user execute bits are set according to the filename extension.
 st_mtime
   Time of last modification of file.
 st_nlink
@@ -1605,16 +1613,16 @@ st_uid
   Numeric identifier of user who owns file (UNIX-specific). This field will always be zero on NT systems. A redirected file is classified as an NT file.
 */
 
-// ´Óm_vFileNameÈÝÆ÷ÖÐ»ñÈ¡Ò»Ìõ¼ÇÂ¼£¨ÎÄ¼þÃû£©£¬Í¬Ê±µÃµ½¸ÃÎÄ¼þµÄ´óÐ¡¡¢ÐÞ¸ÄÊ±¼äµÈÐÅÏ¢¡£
-// µ÷ÓÃOpenDir·½·¨Ê±£¬m_vFileNameÈÝÆ÷±»Çå¿Õ£¬m_pos¹éÁã£¬Ã¿µ÷ÓÃÒ»´ÎReadDir·½·¨m_pos¼Ó1¡£
-// µ±m_posÐ¡ÓÚm_vFileName.size()£¬·µ»Øtrue£¬·ñÔò·µ»Øfalse¡£
+// ï¿½ï¿½m_vFileNameï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½È¡Ò»ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ê±ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½Þ¸ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½OpenDirï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½m_vFileNameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ£ï¿½m_posï¿½ï¿½ï¿½ã£¬Ã¿ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ReadDirï¿½ï¿½ï¿½ï¿½m_posï¿½ï¿½1ï¿½ï¿½
+// ï¿½ï¿½m_posÐ¡ï¿½ï¿½m_vFileName.size()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½ï¿½ï¿½ï¿½ò·µ»ï¿½falseï¿½ï¿½
 bool CDir::ReadDir()
 {
   initdata();
 
   int ivsize=m_vFileName.size();
 
-  // Èç¹ûÒÑ¶ÁÍê£¬Çå¿ÕÈÝÆ÷
+  // ï¿½ï¿½ï¿½ï¿½Ñ¶ï¿½ï¿½ê£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   if (m_pos >= ivsize) 
   {
     m_pos=0; m_vFileName.clear(); return false;
@@ -1624,15 +1632,15 @@ bool CDir::ReadDir()
 
   pos=m_vFileName[m_pos].find_last_of("/");
 
-  // Ä¿Â¼Ãû
+  // Ä¿Â¼ï¿½ï¿½
   memset(m_DirName,0,sizeof(m_DirName));
   strcpy(m_DirName,m_vFileName[m_pos].substr(0,pos).c_str());
 
-  // ÎÄ¼þÃû
+  // ï¿½Ä¼ï¿½ï¿½ï¿½
   memset(m_FileName,0,sizeof(m_FileName));
   strcpy(m_FileName,m_vFileName[m_pos].substr(pos+1,m_vFileName[m_pos].size()-pos-1).c_str());
 
-  // ÎÄ¼þÈ«Ãû£¬°üÀ¨Â·¾¶
+  // ï¿½Ä¼ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
   snprintf(m_FullFileName,300,"%s",m_vFileName[m_pos].c_str());
 
   struct stat st_filestat;
@@ -1691,15 +1699,15 @@ CDir::~CDir()
   // m_vDirName.clear();
 }
 
-// É¾³ýÄ¿Â¼ÖÐµÄÎÄ¼þ£¬ÀàËÆLinuxÏµÍ³µÄrmÃüÁî¡£
-// filename£º´ýÉ¾³ýµÄÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû£¬ÀýÈç/tmp/root/data.xml¡£
-// times£ºÖ´ÐÐÉ¾³ýÎÄ¼þµÄ´ÎÊý£¬È±Ê¡ÊÇ1£¬½¨Òé²»Òª³¬¹ý3£¬´ÓÊµ¼ÊÓ¦ÓÃµÄ¾­Ñé¿´À´£¬Èç¹ûÉ¾³ýÎÄ¼þµÚ1´Î²»³É¹¦£¬ÔÙ³¢ÊÔ
-// 2´ÎÊÇ¿ÉÒÔµÄ£¬¸ü¶à¾ÍÒâÒå²»´óÁË¡£»¹ÓÐ£¬Èç¹ûÖ´ÐÐÉ¾³ýÊ§°Ü£¬usleep(100000)ºóÔÙÖØÊÔ¡£
-// ·µ»ØÖµ£ºtrue-É¾³ý³É¹¦£»false-É¾³ýÊ§°Ü£¬Ê§°ÜµÄÖ÷ÒªÔ­ÒòÊÇÈ¨ÏÞ²»×ã¡£
-// ÔÚÓ¦ÓÃ¿ª·¢ÖÐ£¬¿ÉÒÔÓÃREMOVEº¯Êý´úÌæremove¿âº¯Êý¡£
+// É¾ï¿½ï¿½Ä¿Â¼ï¿½Ðµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½LinuxÏµÍ³ï¿½ï¿½rmï¿½ï¿½ï¿½î¡£
+// filenameï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/tmp/root/data.xmlï¿½ï¿½
+// timesï¿½ï¿½Ö´ï¿½ï¿½É¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½È±Ê¡ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½é²»Òªï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ó¦ï¿½ÃµÄ¾ï¿½ï¿½é¿´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½1ï¿½Î²ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½Ù³ï¿½ï¿½ï¿½
+// 2ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ÔµÄ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å²»ï¿½ï¿½ï¿½Ë¡ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½É¾ï¿½ï¿½Ê§ï¿½Ü£ï¿½usleep(100000)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½true-É¾ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½false-É¾ï¿½ï¿½Ê§ï¿½Ü£ï¿½Ê§ï¿½Üµï¿½ï¿½ï¿½ÒªÔ­ï¿½ï¿½ï¿½ï¿½È¨ï¿½Þ²ï¿½ï¿½ã¡£
+// ï¿½ï¿½Ó¦ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½REMOVEï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½removeï¿½âº¯ï¿½ï¿½ï¿½ï¿½
 bool REMOVE(const char *filename,const int times)
 {
-  // Èç¹ûÎÄ¼þ²»´æÔÚ£¬Ö±½Ó·µ»ØÊ§°Ü
+  // ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½Ö±ï¿½Ó·ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
   if (access(filename,R_OK) != 0) return false;
 
   for (int ii=0;ii<times;ii++)
@@ -1712,18 +1720,18 @@ bool REMOVE(const char *filename,const int times)
   return false;
 }
 
-// °ÑÎÄ¼þÖØÃüÃû£¬ÀàËÆLinuxÏµÍ³µÄmvÃüÁî¡£
-// srcfilename£ºÔ­ÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû¡£
-// destfilename£ºÄ¿±êÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû¡£
-// times£ºÖ´ÐÐÖØÃüÃûÎÄ¼þµÄ´ÎÊý£¬È±Ê¡ÊÇ1£¬½¨Òé²»Òª³¬¹ý3£¬´ÓÊµ¼ÊÓ¦ÓÃµÄ¾­Ñé¿´À´£¬Èç¹ûÖØÃüÃûÎÄ¼þµÚ1´Î²»³É¹¦£¬ÔÙ³¢
-// ÊÔ2´ÎÊÇ¿ÉÒÔµÄ£¬¸ü¶à´Î¾ÍÒâÒå²»´óÁË¡£»¹ÓÐ£¬Èç¹ûÖ´ÐÐÖØÃüÃûÊ§°Ü£¬usleep(100000)ºóÔÙÖØÊÔ¡£
-// ·µ»ØÖµ£ºtrue-ÖØÃüÃû³É¹¦£»false-ÖØÃüÃûÊ§°Ü£¬Ê§°ÜµÄÖ÷ÒªÔ­ÒòÊÇÈ¨ÏÞ²»×ã»ò´ÅÅÌ¿Õ¼ä²»¹»£¬Èç¹ûÔ­ÎÄ¼þºÍÄ¿±êÎÄ¼þ²»
-// ÔÚÍ¬Ò»¸ö´ÅÅÌ·ÖÇø£¬ÖØÃüÃûÒ²¿ÉÄÜÊ§°Ü¡£
-// ×¢Òâ£¬ÔÚÖØÃüÃûÎÄ¼þÖ®Ç°£¬»á×Ô¶¯´´½¨destfilename²ÎÊýÖÐµÄÄ¿Â¼Ãû¡£
-// ÔÚÓ¦ÓÃ¿ª·¢ÖÐ£¬¿ÉÒÔÓÃRENAMEº¯Êý´úÌærename¿âº¯Êý¡£
+// ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½LinuxÏµÍ³ï¿½ï¿½mvï¿½ï¿½ï¿½î¡£
+// srcfilenameï¿½ï¿½Ô­ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+// destfilenameï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+// timesï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½È±Ê¡ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½é²»Òªï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ó¦ï¿½ÃµÄ¾ï¿½ï¿½é¿´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½1ï¿½Î²ï¿½ï¿½É¹ï¿½ï¿½ï¿½ï¿½Ù³ï¿½
+// ï¿½ï¿½2ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ÔµÄ£ï¿½ï¿½ï¿½ï¿½ï¿½Î¾ï¿½ï¿½ï¿½ï¿½å²»ï¿½ï¿½ï¿½Ë¡ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½usleep(100000)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½true-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¹ï¿½ï¿½ï¿½false-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½Ê§ï¿½Üµï¿½ï¿½ï¿½ÒªÔ­ï¿½ï¿½ï¿½ï¿½È¨ï¿½Þ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¿Õ¼ä²»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½Ä¼ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+// ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü¡ï¿½
+// ×¢ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½destfilenameï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½Ó¦ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RENAMEï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½renameï¿½âº¯ï¿½ï¿½ï¿½ï¿½
 bool RENAME(const char *srcfilename,const char *dstfilename,const int times)
 {
-  // Èç¹ûÎÄ¼þ²»´æÔÚ£¬Ö±½Ó·µ»ØÊ§°Ü
+  // ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½Ö±ï¿½Ó·ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
   if (access(srcfilename,R_OK) != 0) return false;
 
   if (MKDIR(dstfilename) == false) return false;
@@ -1766,7 +1774,7 @@ bool CTcpClient::ConnectToServer(const char *ip,const int port)
 
   memset(&servaddr,0,sizeof(servaddr));
   servaddr.sin_family = AF_INET;
-  servaddr.sin_port = htons(m_port);  // Ö¸¶¨·þÎñ¶ËµÄÍ¨Ñ¶¶Ë¿Ú
+  servaddr.sin_port = htons(m_port);  // Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½Í¨Ñ¶ï¿½Ë¿ï¿½
   memcpy(&servaddr.sin_addr,h->h_addr,h->h_length);
 
   if (connect(m_sockfd, (struct sockaddr *)&servaddr,sizeof(servaddr)) != 0)
@@ -1862,13 +1870,18 @@ bool CTcpServer::InitServer(const unsigned int port)
 
   m_listenfd = socket(AF_INET,SOCK_STREAM,0);
 
-  // WINDOWSÆ½Ì¨ÈçÏÂ
+  // WINDOWSÆ½Ì¨ï¿½ï¿½ï¿½ï¿½
   //char b_opt='1';
   //setsockopt(m_listenfd,SOL_SOCKET,SO_REUSEADDR,&b_opt,sizeof(b_opt));
 
-  // LinuxÈçÏÂ
+  // Linuxï¿½ï¿½ï¿½ï¿½
   int opt = 1; unsigned int len = sizeof(opt);
+  #ifdef _WIN32
+  char b_opt='1';
+  setsockopt(m_listenfd,SOL_SOCKET,SO_REUSEADDR,&b_opt,sizeof(b_opt));
+  #else
   setsockopt(m_listenfd,SOL_SOCKET,SO_REUSEADDR,&opt,len);
+  #endif
 
   memset(&m_servaddr,0,sizeof(m_servaddr));
   m_servaddr.sin_family = AF_INET;
@@ -2002,7 +2015,7 @@ bool TcpRead(const int sockfd,char *buffer,int *ibuflen,const int itimeout)
 
   if (Readn(sockfd,(char*)ibuflen,4) == false) return false;
 
-  (*ibuflen)=ntohl(*ibuflen);  // °ÑÍøÂç×Ö½ÚÐò×ª»»ÎªÖ÷»ú×Ö½ÚÐò¡£
+  (*ibuflen)=ntohl(*ibuflen);  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½
 
   if (Readn(sockfd,buffer,(*ibuflen)) == false) return false;
 
@@ -2025,11 +2038,11 @@ bool TcpWrite(const int sockfd,const char *buffer,const int ibuflen)
   
   int ilen=0;
 
-  // Èç¹û³¤¶ÈÎª0£¬¾Í²ÉÓÃ×Ö·û´®µÄ³¤¶È
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½
   if (ibuflen==0) ilen=strlen(buffer);
   else ilen=ibuflen;
 
-  int ilenn=htonl(ilen);  // ×ª»»ÎªÍøÂç×Ö½ÚÐò¡£
+  int ilenn=htonl(ilen);  // ×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½
 
   char strTBuffer[ilen+4];
   memset(strTBuffer,0,sizeof(strTBuffer));
@@ -2076,7 +2089,7 @@ bool Writen(const int sockfd,const char *buffer,const size_t n)
 }
 
 
-// °ÑÎÄ¼þÍ¨¹ýsockfd·¢ËÍ¸ø¶Ô¶Ë
+// ï¿½ï¿½ï¿½Ä¼ï¿½Í¨ï¿½ï¿½sockfdï¿½ï¿½ï¿½Í¸ï¿½ï¿½Ô¶ï¿½
 bool SendFile(int sockfd,struct st_fileinfo *stfileinfo,CLogFile *logfile)
 {
   char strSendBuffer[301],strRecvBuffer[301];
@@ -2128,7 +2141,7 @@ bool SendFile(int sockfd,struct st_fileinfo *stfileinfo,CLogFile *logfile)
 
   fclose(fp);
 
-  // ½ÓÊÕ¶Ô¶Ë·µ»ØµÄÈ·ÈÏ±¨ÎÄ
+  // ï¿½ï¿½ï¿½Õ¶Ô¶Ë·ï¿½ï¿½Øµï¿½È·ï¿½Ï±ï¿½ï¿½ï¿½
   int buflen=0;
   memset(strRecvBuffer,0,sizeof(strRecvBuffer));
   if (TcpRead(sockfd,strRecvBuffer,&buflen)==false)
@@ -2142,7 +2155,7 @@ bool SendFile(int sockfd,struct st_fileinfo *stfileinfo,CLogFile *logfile)
   return true;
 }
 
-// ½ÓÊÕÍ¨¹ýsocdfd·¢ËÍ¹ýÀ´µÄÎÄ¼þ
+// ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½socdfdï¿½ï¿½ï¿½Í¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
 bool RecvFile(int sockfd,struct st_fileinfo *stfileinfo,CLogFile *logfile)
 {
   char strSendBuffer[301];
@@ -2152,7 +2165,7 @@ bool RecvFile(int sockfd,struct st_fileinfo *stfileinfo,CLogFile *logfile)
 
   FILE *fp=0;
 
-  if ( (fp=FOPEN(strfilenametmp,"wb")) ==0)     // FOPEN¿É´´½¨Ä¿Â¼
+  if ( (fp=FOPEN(strfilenametmp,"wb")) ==0)     // FOPENï¿½É´ï¿½ï¿½ï¿½Ä¿Â¼
   {
     if (logfile!=0) logfile->Write("RecvFile FOPEN %s failed.\n",strfilenametmp); 
     return false;
@@ -2184,14 +2197,14 @@ bool RecvFile(int sockfd,struct st_fileinfo *stfileinfo,CLogFile *logfile)
 
   fclose(fp);
 
-  // ÖØÖÃÎÄ¼þµÄÊ±¼ä
+  // ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
   UTime(strfilenametmp,stfileinfo->mtime);
 
   memset(strSendBuffer,0,sizeof(strSendBuffer));
   if (RENAME(strfilenametmp,stfileinfo->filename)==true) strcpy(strSendBuffer,"ok");
   else strcpy(strSendBuffer,"failed");
 
-  // Ïò¶Ô¶Ë·µ»ØÏìÓ¦ÄÚÈÝ
+  // ï¿½ï¿½Ô¶Ë·ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½
   if (TcpWrite(sockfd,strSendBuffer)==false)
   {
     if (logfile!=0) logfile->Write("RecvFile TcpWrite() failed.\n"); 
@@ -2203,14 +2216,14 @@ bool RecvFile(int sockfd,struct st_fileinfo *stfileinfo,CLogFile *logfile)
   return true;
 }
 
-// ¸´ÖÆÎÄ¼þ£¬ÀàËÆLinuxÏµÍ³µÄcpÃüÁî¡£
-// srcfilename£ºÔ­ÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû¡£
-// destfilename£ºÄ¿±êÎÄ¼þÃû£¬½¨Òé²ÉÓÃ¾ø¶ÔÂ·¾¶µÄÎÄ¼þÃû¡£
-// ·µ»ØÖµ£ºtrue-¸´ÖÆ³É¹¦£»false-¸´ÖÆÊ§°Ü£¬Ê§°ÜµÄÖ÷ÒªÔ­ÒòÊÇÈ¨ÏÞ²»×ã»ò´ÅÅÌ¿Õ¼ä²»¹»¡£
-// ×¢Òâ£º
-// 1£©ÔÚ¸´ÖÆÃûÎÄ¼þÖ®Ç°£¬»á×Ô¶¯´´½¨destfilename²ÎÊýÖÐµÄÄ¿Â¼Ãû¡£
-// 2£©¸´ÖÆÎÄ¼þµÄ¹ý³ÌÖÐ£¬²ÉÓÃÁÙÊ±ÎÄ¼þÃüÃûµÄ·½·¨£¬¸´ÖÆÍê³ÉºóÔÙ¸ÄÃûÎªdestfilename£¬±ÜÃâÖÐ¼ä×´Ì¬µÄÎÄ¼þ±»¶ÁÈ¡¡£
-// 3£©¸´ÖÆºóµÄÎÄ¼þµÄÊ±¼äÓëÔ­ÎÄ¼þÏàÍ¬£¬ÕâÒ»µãÓëLinuxÏµÍ³cpÃüÁî²»Í¬¡£
+// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½LinuxÏµÍ³ï¿½ï¿½cpï¿½ï¿½ï¿½î¡£
+// srcfilenameï¿½ï¿½Ô­ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+// destfilenameï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½true-ï¿½ï¿½ï¿½Æ³É¹ï¿½ï¿½ï¿½false-ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½Ê§ï¿½Üµï¿½ï¿½ï¿½ÒªÔ­ï¿½ï¿½ï¿½ï¿½È¨ï¿½Þ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¿Õ¼ä²»ï¿½ï¿½ï¿½ï¿½
+// ×¢ï¿½â£º
+// 1ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½destfilenameï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ä¿Â¼ï¿½ï¿½ï¿½ï¿½
+// 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éºï¿½ï¿½Ù¸ï¿½ï¿½ï¿½Îªdestfilenameï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½×´Ì¬ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½
+// 3ï¿½ï¿½ï¿½ï¿½ï¿½Æºï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ô­ï¿½Ä¼ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½LinuxÏµÍ³cpï¿½ï¿½ï¿½î²»Í¬ï¿½ï¿½
 bool COPY(const char *srcfilename,const char *dstfilename)
 {
   if (MKDIR(dstfilename) == false) return false;
@@ -2254,7 +2267,7 @@ bool COPY(const char *srcfilename,const char *dstfilename)
 
   close(dstfd);
 
-  // ¸ü¸ÄÎÄ¼þµÄÐÞ¸ÄÊ±¼äÊôÐÔ
+  // ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   char strmtime[21];
   memset(strmtime,0,sizeof(strmtime));
   FileMTime(srcfilename,strmtime);
@@ -2271,17 +2284,17 @@ CTimer::CTimer()
   memset(&m_start,0,sizeof(struct timeval));
   memset(&m_end,0,sizeof(struct timeval));
 
-  // ¿ªÊ¼¼ÆÊ±
+  // ï¿½ï¿½Ê¼ï¿½ï¿½Ê±
   Start();
 }
 
-// ¿ªÊ¼¼ÆÊ±
+// ï¿½ï¿½Ê¼ï¿½ï¿½Ê±
 void CTimer::Start()
 {
   gettimeofday( &m_start, 0 );
 }
 
-// ¼ÆËãÒÑÊÅÈ¥µÄÊ±¼ä£¬µ¥Î»£ºÃë£¬Ð¡ÊýµãºóÃæÊÇÎ¢Ãë
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½Î»ï¿½ï¿½ï¿½ë£¬Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¢ï¿½ï¿½
 double CTimer::Elapsed()
 {
 
@@ -2300,7 +2313,7 @@ double CTimer::Elapsed()
   snprintf(strtemp,30,"%ld.%ld",m_end.tv_sec,m_end.tv_usec);
   dend=atof(strtemp);
 
-  // ÖØÐÂ¿ªÊ¼¼ÆÊ±
+  // ï¿½ï¿½ï¿½Â¿ï¿½Ê¼ï¿½ï¿½Ê±
   Start();
 
   return dend-dstart;
