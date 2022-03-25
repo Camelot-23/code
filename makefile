@@ -20,4 +20,4 @@ client:client.cpp
 
 
 clean:
-	rm -rf $(Gather)
+	rm $(Gather)
