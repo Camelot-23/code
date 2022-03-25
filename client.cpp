@@ -45,7 +45,10 @@ void *pth_read(void *conn)
 			break;
         printf("read:%s\n", Rbuffer);
         if(strcmp(Rbuffer, "bye") == 0)
-            break;
+		{
+			TcpWrite(sock, "bye");
+			break;
+		}
     }   
         
     pthread_exit(0);

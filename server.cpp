@@ -10,6 +10,7 @@
 void EXIT(int sig);
 void *pth_read(void *conn);
 void *pth_write(void *conn);
+int SocketConnected(int sock);
 
 
 int main(int argc,char *argv[])
@@ -29,6 +30,8 @@ int main(int argc,char *argv[])
 		perror("Server accept failed!\n");
 		return -1;
 	}
+
+	printf("Client IP:%s\n", server.GetIP());
 
 	pthread_t pread, pwrite;
 	pthread_create(&pread,  NULL, pth_read ,(void *)(long)server.m_connfd);
@@ -52,7 +55,10 @@ void *pth_read(void *conn)
 			break;
 		printf("read:%s\n", Rbuffer);
 		if(strcmp(Rbuffer, "bye") == 0)
+		{
+			TcpWrite(sock, "bye");
 			break;
+		}
 	}
 
 	pthread_exit(0);
@@ -73,8 +79,8 @@ void *pth_write(void *conn)
 			break;
 		if(strcmp(Wbuffer, "bye") == 0)
 			break;
-	}                                                                                                                                                                                      
-
+	}
+	pthread_exit(0);
 }
 
 void EXIT(int sig)
