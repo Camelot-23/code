@@ -1,67 +1,62 @@
-/*
- *  ³ÌĞòÃû£ºinserttable.cpp£¬´Ë³ÌĞòÑİÊ¾freecplus¿ò¼Ü²Ù×÷MySQLÊı¾İ¿â£¨Ïò±íÖĞ²åÈë5Ìõ¼ÇÂ¼£©¡£
- *  ×÷Õß£ºCÓïÑÔ¼¼ÊõÍø(www.freecplus.net) ÈÕÆÚ£º20190525
-*/
-#include "_mysql.h"   // freecplus¿ò¼Ü²Ù×÷MySQLµÄÍ·ÎÄ¼ş¡£
+#include "_mysql.h"   // freecplusæ¡†æ¶æ“ä½œMySQLçš„å¤´æ–‡ä»¶ã€‚
 
-// ¶¨ÒåÓÃÓÚ³¬Å®ĞÅÏ¢µÄ½á¹¹£¬Óë±íÖĞµÄ×Ö¶Î¶ÔÓ¦¡£
+// å®šä¹‰ç”¨äºè¶…å¥³ä¿¡æ¯çš„ç»“æ„ï¼Œä¸è¡¨ä¸­çš„å­—æ®µå¯¹åº”ã€‚
 struct st_girls
 {
-  long id;        // ³¬Å®±àºÅ£¬ÓÃlongÊı¾İÀàĞÍ¶ÔÓ¦OracleÎŞĞ¡ÊıµÄnumber(10)¡£
-  char name[31];  // ³¬Å®ĞÕÃû£¬ÓÃchar[31]¶ÔÓ¦OracleµÄvarchar2(30)¡£
-  double weight;  // ³¬Å®ÌåÖØ£¬ÓÃdoubleÊı¾İÀàĞÍ¶ÔÓ¦OracleÓĞĞ¡ÊıµÄnumber(8,2)¡£
-  char btime[20]; // ±¨ÃûÊ±¼ä£¬ÓÃchar¶ÔÓ¦OracleµÄdate£¬¸ñÊ½£º'yyyy-mm-dd hh24:mi:ssi'¡£
+	long id;        // è¶…å¥³ç¼–å·ï¼Œç”¨longæ•°æ®ç±»å‹å¯¹åº”Oracleæ— å°æ•°çš„number(10)ã€‚
+	char name[31];  // è¶…å¥³å§“åï¼Œç”¨char[31]å¯¹åº”Oracleçš„varchar2(30)ã€‚
+	double weight;  // è¶…å¥³ä½“é‡ï¼Œç”¨doubleæ•°æ®ç±»å‹å¯¹åº”Oracleæœ‰å°æ•°çš„number(8,2)ã€‚
+	char btime[20]; // æŠ¥åæ—¶é—´ï¼Œç”¨charå¯¹åº”Oracleçš„dateï¼Œæ ¼å¼ï¼š'yyyy-mm-dd hh24:mi:ssi'ã€‚
 } stgirls;
 
 int main(int argc,char *argv[])
 {
-  connection conn; // Êı¾İ¿âÁ¬½ÓÀà
+	connection conn; // æ•°æ®åº“è¿æ¥ç±»
 
-  // µÇÂ¼Êı¾İ¿â£¬·µ»ØÖµ£º0-³É¹¦£¬ÆäËü-Ê§°Ü¡£
-  // Ê§°Ü´úÂëÔÚconn.m_cda.rcÖĞ£¬Ê§°ÜÃèÊöÔÚconn.m_cda.messageÖĞ¡£
-  if (conn.connecttodb("172.16.0.15,root,123qweASD!@#,mysql,3306","gbk") != 0)
-  {
-    printf("connect database failed.\n%s\n",conn.m_cda.message); return -1;
-  }
-  
-  sqlstatement stmt(&conn); // ²Ù×÷SQLÓï¾äµÄ¶ÔÏó¡£
+	// ç™»å½•æ•°æ®åº“ï¼Œè¿”å›å€¼ï¼š0-æˆåŠŸï¼Œå…¶å®ƒ-å¤±è´¥ã€‚
+	// å¤±è´¥ä»£ç åœ¨conn.m_cda.rcä¸­ï¼Œå¤±è´¥æè¿°åœ¨conn.m_cda.messageä¸­ã€‚
+	if (conn.connecttodb("127.0.0.1,root,ccff,camelot,3306","utf8") != 0)
+	{
+		printf("connect database failed.\n%s\n",conn.m_cda.message); return -1;
+	}
 
-  // ×¼±¸²åÈë±íµÄSQLÓï¾ä¡£
-  stmt.prepare("\
-    insert into girls(id,name,weight,btime) \
-              values(:1,:2,:3,str_to_date(:4,'%%Y-%%m-%%d %%h:%%i:%%s'))");
-  // Ò²¿ÉÒÔÓÃÒÔÏÂÒ»ĞĞ´úÂë´úÌæÉÏÃæÕâĞĞ´úÂë£¬¼æÈİoracleÊı¾İ¿â¡£
-  //            values(:1,:2,:3,to_date(:4,'yyyy-mm-dd hh24:mi:ss'))");
-  // prepare·½·¨²»ĞèÒªÅĞ¶Ï·µ»ØÖµ¡£
-  // ÎªSQLÓï¾ä°ó¶¨ÊäÈë±äÁ¿µÄµØÖ·£¬bindin·½·¨²»ĞèÒªÅĞ¶Ï·µ»ØÖµ¡£
-  stmt.bindin(1,&stgirls.id);
-  stmt.bindin(2, stgirls.name,30);
-  stmt.bindin(3,&stgirls.weight);
-  stmt.bindin(4, stgirls.btime,19);
+	sqlstatement stmt(&conn); // æ“ä½œSQLè¯­å¥çš„å¯¹è±¡ã€‚
 
-  // Ä£Äâ³¬Å®Êı¾İ£¬Ïò±íÖĞ²åÈë5Ìõ²âÊÔĞÅÏ¢¡£
-  for (int ii=1;ii<=5;ii++)
-  {
-    memset(&stgirls,0,sizeof(stgirls)); // ½á¹¹Ìå±äÁ¿³õÊ¼»¯¡£
+	// å‡†å¤‡æ’å…¥è¡¨çš„SQLè¯­å¥ã€‚
+	stmt.prepare("\
+			insert into girls(id,name,weight,btime) \
+			values(:1,:2,:3,str_to_date(:4,'%%Y-%%m-%%d %%h:%%i:%%s'))");
+	// ä¹Ÿå¯ä»¥ç”¨ä»¥ä¸‹ä¸€è¡Œä»£ç ä»£æ›¿ä¸Šé¢è¿™è¡Œä»£ç ï¼Œå…¼å®¹oracleæ•°æ®åº“ã€‚
+	//            values(:1,:2,:3,to_date(:4,'yyyy-mm-dd hh24:mi:ss'))");
+	// prepareæ–¹æ³•ä¸éœ€è¦åˆ¤æ–­è¿”å›å€¼ã€‚
+	// ä¸ºSQLè¯­å¥ç»‘å®šè¾“å…¥å˜é‡çš„åœ°å€ï¼Œbindinæ–¹æ³•ä¸éœ€è¦åˆ¤æ–­è¿”å›å€¼ã€‚
+	stmt.bindin(1,&stgirls.id);
+	stmt.bindin(2, stgirls.name,30);
+	stmt.bindin(3,&stgirls.weight);
+	stmt.bindin(4, stgirls.btime,19);
 
-    // Îª½á¹¹Ìå±äÁ¿µÄ³ÉÔ±¸³Öµ¡£
-    stgirls.id=ii;                                 // ³¬Å®±àºÅ¡£
-    sprintf(stgirls.name,"³¬Å®%02d",ii);           // ³¬Å®ĞÕÃû¡£
-    stgirls.weight=ii*2.11;                        // ³¬Å®ÌåÖØ¡£
-    strcpy(stgirls.btime,"2018-03-01 12:25:31");   // ±¨ÃûÊ±¼ä¡£
+	// æ¨¡æ‹Ÿè¶…å¥³æ•°æ®ï¼Œå‘è¡¨ä¸­æ’å…¥5æ¡æµ‹è¯•ä¿¡æ¯ã€‚
+	for (int ii=1;ii<=5;ii++)
+	{
+		memset(&stgirls,0,sizeof(stgirls)); // ç»“æ„ä½“å˜é‡åˆå§‹åŒ–ã€‚
 
-    // Ö´ĞĞSQLÓï¾ä£¬Ò»¶¨ÒªÅĞ¶Ï·µ»ØÖµ£¬0-³É¹¦£¬ÆäËü-Ê§°Ü¡£
-    // Ê§°Ü´úÂëÔÚstmt.m_cda.rcÖĞ£¬Ê§°ÜÃèÊöÔÚstmt.m_cda.messageÖĞ¡£
-    if (stmt.execute() != 0)
-    {
-      printf("stmt.execute() failed.\n%s\n%s\n",stmt.m_sql,stmt.m_cda.message); return -1;
-    }
+		// ä¸ºç»“æ„ä½“å˜é‡çš„æˆå‘˜èµ‹å€¼ã€‚
+		stgirls.id=ii;                                 // è¶…å¥³ç¼–å·ã€‚
+		sprintf(stgirls.name,"è¶…å¥³%02d",ii);           // è¶…å¥³å§“åã€‚
+		stgirls.weight=ii*2.11;                        // è¶…å¥³ä½“é‡ã€‚
+		strcpy(stgirls.btime,"2018-03-01 12:25:31");   // æŠ¥åæ—¶é—´ã€‚
 
-    printf("³É¹¦²åÈëÁË%ldÌõ¼ÇÂ¼¡£\n",stmt.m_cda.rpc); // stmt.m_cda.rpcÊÇ±¾´ÎÖ´ĞĞSQLÓ°ÏìµÄ¼ÇÂ¼Êı¡£
-  }
+		// æ‰§è¡ŒSQLè¯­å¥ï¼Œä¸€å®šè¦åˆ¤æ–­è¿”å›å€¼ï¼Œ0-æˆåŠŸï¼Œå…¶å®ƒ-å¤±è´¥ã€‚
+		// å¤±è´¥ä»£ç åœ¨stmt.m_cda.rcä¸­ï¼Œå¤±è´¥æè¿°åœ¨stmt.m_cda.messageä¸­ã€‚                                                                                                                         
+		if (stmt.execute() != 0)
+		{
+			printf("stmt.execute() failed.\n%s\n%s\n",stmt.m_sql,stmt.m_cda.message); return -1;
+		}
 
-  printf("insert table girls ok.\n");
+		printf("æˆåŠŸæ’å…¥äº†%ldæ¡è®°å½•ã€‚\n",stmt.m_cda.rpc); // stmt.m_cda.rpcæ˜¯æœ¬æ¬¡æ‰§è¡ŒSQLå½±å“çš„è®°å½•æ•°ã€‚
+	}
 
-  conn.commit(); // Ìá½»Êı¾İ¿âÊÂÎñ¡£
+	printf("insert table girls ok.\n");
+
+	conn.commit(); // æäº¤æ•°æ®åº“äº‹åŠ¡ã€‚
 }
-
