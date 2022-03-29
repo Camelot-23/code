@@ -38,22 +38,22 @@ set noswapfile
 
 "编码设置
 set enc=utf-8
-set fencs=gbk,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+set fencs=utf-8,gbk,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 "语言设置
-set langmenu=zh_CN.GBK
+set langmenu=zh_CN.UTF-8
 set helplang=cn
 " 我的状态行显示的内容（包括文件类型和解码）
 "set statusline=[Line:%l/%L,Column:%c][%p%%]
 
 "自动补全
 :inoremap ( ()<ESC>i
-		:inoremap ) <c-r>=ClosePair(')')<CR>
+:inoremap ) <c-r>=ClosePair(')')<CR>
 :inoremap { {<CR>}<ESC>O
 :inoremap } <c-r>=ClosePair('}')<CR>
 :inoremap [ []<ESC>i
 :inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap " ""<ESC>i
-	:inoremap ' ''<ESC>i
+":inoremap " ""<ESC>i
+:inoremap ' ''<ESC>i
 function! ClosePair(char)
 	if getline('.')[col('.') - 1] == a:char
 	return "\<Right>"
