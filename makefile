@@ -1,11 +1,11 @@
-# mysqlͷ�ļ����·��                                                                                                                                                                                       
+ #mysql头文件存放路径
 MYSQLINCL = -I/usr/include/mysql
 MYCPP = ./freecplus/db/mysql/_mysql.cpp
 
-# mysql���ļ�����·��
+# mysql库文件保存路径
 MYSQLLIB = -L/usr/lib64/mysql
 
-# mysql���ӿ�
+# mysql链接库
 MYSQLLIBS = -lmysqlclient
 
 ORALIBS = -pthread -lm  -lwsock32
