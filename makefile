@@ -1,16 +1,16 @@
-# mysqlÍ·ÎÄ¼þ´æ·ÅÂ·¾¶                                                                                                                                                                                       
+# mysqlÍ·ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½                                                                                                                                                                                       
 MYSQLINCL = -I/usr/include/mysql
 MYCPP = ./freecplus/db/mysql/_mysql.cpp
 
-# mysql¿âÎÄ¼þ±£´æÂ·¾¶
+# mysqlï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 MYSQLLIB = -L/usr/lib64/mysql
 
-# mysqlÁ´½Ó¿â
+# mysqlï¿½ï¿½ï¿½Ó¿ï¿½
 MYSQLLIBS = -lmysqlclient
 
-ORALIBS = -pthread -lm 
+ORALIBS = -pthread -lm  -lwsock32
 
-Gather=main server client insert
+Gather=main insert
 
 INCLUDE=-I./freecplus -I./freecplus/db/mysql
 
@@ -22,12 +22,6 @@ all:$(Gather)
 
 main: main.cpp
 	g++ $(CFLAGS) main main.cpp $(INCLUDE) $(CPP) $(ORALIBS)
-
-server:server.cpp
-	g++ $(CFLAGS) server server.cpp $(INCLUDE) $(CPP) $(ORALIBS)
-
-client:client.cpp
-	g++ $(CFLAGS) client client.cpp $(INCLUDE) $(CPP) $(ORALIBS)
 
 insert:insert.cpp
 	g++ $(CFLAGS) insert insert.cpp $(INCLUDE) $(MYSQLINCL) $(MYSQLLIB) $(MYCPP) $(MYSQLLIBS) -lm -lc
