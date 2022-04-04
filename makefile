@@ -8,7 +8,7 @@ MYSQLLIB = -L/usr/lib64/mysql
 # mysql链接库
 MYSQLLIBS = -lmysqlclient
 
-ORALIBS = -pthread -lm -lwsock32
+ORALIBS = -pthread -lm #-lwsock32
 
 Gather=main insert
 

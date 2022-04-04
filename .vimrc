@@ -47,13 +47,13 @@ set helplang=cn
 
 "自动补全
 :inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
+		:inoremap ) <c-r>=ClosePair(')')<CR>
 :inoremap { {<CR>}<ESC>O
-:inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-":inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
+	:inoremap } <c-r>=ClosePair('}')<CR>
+	:inoremap [ []<ESC>i
+	:inoremap ] <c-r>=ClosePair(']')<CR>
+	":inoremap " ""<ESC>i
+	:inoremap ' ''<ESC>i
 function! ClosePair(char)
 	if getline('.')[col('.') - 1] == a:char
 	return "\<Right>"
@@ -114,7 +114,7 @@ func SetTitle()
 	"		call append(line(".")+7,"")
 	"	endif
 	"新建文件后，自动定位到文件末尾--_不知道为什么不生效
-   	autocmd BufNewFile * normal G
+	autocmd BufNewFile * normal G
 	endfunction
 
 
